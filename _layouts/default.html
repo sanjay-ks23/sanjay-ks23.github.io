@@ -110,12 +110,14 @@ ga('send', 'pageview');
 
 <!-- Site Title
 ================================================== -->
+{% if page.show_sitetitle != false %}
 <div class="mainheading">
     <h1 class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
         {{ site.description }}
     </p>
 </div>
+{% endif %}
 
 <!-- Content
 ================================================== -->
@@ -126,6 +128,7 @@ ga('send', 'pageview');
 
 </div>
 
+{% if page.show_explore != false %}
 <!-- Explore Categories Section
 ================================================== -->
 <div class="explore-section-wrapper" style="margin-top: 2rem;">
@@ -165,6 +168,7 @@ ga('send', 'pageview');
         </div>
     </div>
 </div>
+{% endif %}
 
 <style>
 .explore-section-wrapper {
