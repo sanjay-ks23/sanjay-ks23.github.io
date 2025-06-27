@@ -1,49 +1,152 @@
 ---
 layout: page
-title: About Me
+title: About
 permalink: /about
 comments: false
+show_explore: false
 ---
 
-<div class="row justify-content-between">
-    <div class="col-md-8 pr-5">
-        <p class="lead">I am a Deep Learning Engineer with a passion for developing innovative AI/ML solutions to tackle complex, real-world challenges. My work focuses on the intersection of cutting-edge research and practical application, from optimizing on-device models to engineering large-scale predictive systems.</p>
+<style>
+    .about-header {
+        text-align: center;
+        padding: 3rem 0;
+        background: linear-gradient(135deg, #f7f9f8, #eef2f0);
+        border-bottom: 1px solid #e0e7e3;
+    }
+    .about-header h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #2c5c3f;
+        margin-bottom: 0.5rem;
+    }
+    .about-header .lead {
+        font-size: 1.25rem;
+        color: #5a7d6a;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .about-content {
+        padding: 3rem 0;
+        text-align: justify;
+    }
+    .tech-stack-section {
+        text-align: center;
+        padding: 3rem 0;
+        background-color: #ffffff;
+    }
+    .tech-stack-section h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #2c5c3f;
+        margin-bottom: 2rem;
+    }
+    .tech-stack-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .tech-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        transition: transform 0.2s ease;
+    }
+    .tech-icon:hover {
+        transform: scale(1.1);
+    }
+    .tech-icon img {
+        height: 50px;
+        width: auto;
+    }
+    .tech-icon span {
+        font-size: 0.9rem;
+        color: #5a7d6a;
+    }
+    .connect-section {
+        text-align: center;
+        padding: 3rem 0;
+        background: linear-gradient(135deg, #f7f9f8, #eef2f0);
+        border-top: 1px solid #e0e7e3;
+    }
+    .connect-section h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #2c5c3f;
+        margin-bottom: 1rem;
+    }
+    .connect-section p {
+        color: #5a7d6a;
+        margin-bottom: 1.5rem;
+    }
+    .connect-buttons .btn {
+        margin: 0 0.5rem;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+    }
+    .btn-linkedin {
+        background-color: #0077b5;
+        color: white;
+    }
+    .btn-linkedin:hover {
+        background-color: #005582;
+        color: white;
+    }
+    .btn-twitter {
+        background-color: #1DA1F2;
+        color: white;
+    }
+    .btn-twitter:hover {
+        background-color: #0c85d0;
+        color: white;
+    }
+</style>
 
-        <p>I recently graduated with a B.Tech in Computer Science Engineering, specializing in AI and Machine Learning, from the Vellore Institute of Technology. My academic journey has provided me with a strong foundation in computer science fundamentals and a deep understanding of modern AI paradigms.</p>
+<div class="about-header">
+    <h1>Sanjay Kuppusamy Saravanan</h1>
+    <p class="lead">A Deep Learning Engineer passionate about building intelligent solutions that bridge the gap between cutting-edge research and real-world impact.</p>
+</div>
 
-        <p>My professional experience includes impactful internships where I've had the opportunity to work on diverse projects. As an AI/ML Engineer Intern at <strong>SlateMate, IIT Madras</strong>, I contributed to a multi-layered content moderation framework and optimized models for edge deployment. At the <strong>National Institute of Wind Energy</strong>, I led the design of predictive models for wind energy forecasting, even engineering a Temporal Fusion Transformer from scratch.</p>
-
-        <h4>My Work & Research</h4>
-        <p>I am driven by a desire to build robust and scalable systems. My publications and projects reflect this, with a focus on areas like:</p>
-        <ul>
-            <li><strong>Automated Safety Compliance:</strong> I was the first author on an IEEE publication for an autonomous edge AI system for industrial safety, deploying a high-precision YOLO model on NVIDIA Jetson.</li>
-            <li><strong>Blockchain for Secure Data:</strong> I have designed and developed decentralized systems for securing patient health records and enhancing patient triage systems using technologies like Ethereum and IPFS.</li>
-            <li><strong>Advanced AI Models:</strong> My project work includes enhancing Large Language Models like Mistral 7B and developing systems for traffic management and malware detection.</li>
-        </ul>
-
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="about-content">
+                <p>Hello! I'm a recent Computer Science graduate from the Vellore Institute of Technology, where I specialized in AI and Machine Learning. My journey into the world of technology is driven by a fascination with how complex problems can be solved with elegant, data-driven solutions. I thrive on the challenge of designing, building, and deploying systems that are not only powerful but also efficient and scalable.</p>
+                <p>My experience spans from developing robust content moderation frameworks at <strong>SlateMate, IIT Madras</strong>, to engineering sophisticated predictive models for wind energy forecasting with the <strong>National Institute of Wind Energy</strong>. I enjoy working across the full spectrum of a project, from initial concept and research to final deployment and optimization.</p>
+                <p>Beyond my core work, I'm deeply interested in the potential of decentralized technologies and have explored this through projects involving blockchain for secure data management. I believe in the power of open-source and collaborative innovation to push the boundaries of what's possible.</p>
+            </div>
+        </div>
     </div>
+</div>
 
-    <div class="col-md-4">
-        <div class="sticky-top sticky-top-80">
-            <h5>Connect with Me</h5>
-            <p>I'm always open to discussing new projects, research opportunities, or anything else related to AI and technology. Feel free to connect with me on LinkedIn.</p>
-            <a target="_blank" href="https://linkedin.com/in/sanjayks2317" class="btn btn-success">LinkedIn Profile</a>
-            
-            <hr>
+<div class="tech-stack-section">
+    <div class="container">
+        <h2>My Tech Stack</h2>
+        <div class="tech-stack-grid">
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"><span>TensorFlow</span></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"><span>PyTorch</span></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"><span>Azure</span></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP"><span>GCP</span></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ibm/ibm-original.svg" alt="IBM Cloud"><span>IBM Cloud</span></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+        </div>
+    </div>
+</div>
 
-            <h5>Technical Skills</h5>
-            <p>
-                <strong>Languages & Frameworks:</strong><br/>
-                Python, TensorFlow, PyTorch
-            </p>
-            <p>
-                <strong>Core Concepts:</strong><br/>
-                Deep Learning, Reinforcement Learning, NLP, LLM, Computer Vision, Predictive Modelling, RAG
-            </p>
-            <p>
-                <strong>Technologies:</strong><br/>
-                Cloud Computing (Azure, IBM, GCP), Edge Computing, Blockchain, IoT, Git, Linux
-            </p>
+<div class="connect-section">
+    <div class="container">
+        <h2>Connect With Me</h2>
+        <p>I'm always excited to discuss new ideas, projects, or opportunities. Let's connect!</p>
+        <div class="connect-buttons">
+            <a href="https://linkedin.com/in/sanjayks2317" target="_blank" class="btn btn-linkedin"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+            <a href="https://twitter.com/Sanj_AI_space" target="_blank" class="btn btn-twitter"><i class="fab fa-twitter mr-2"></i>Twitter</a>
         </div>
     </div>
 </div>
