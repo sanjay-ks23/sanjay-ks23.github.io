@@ -123,57 +123,39 @@ ga('send', 'pageview');
     {{ content }}
 </div>
 
-{% if site.mailchimp-list %}
-<!-- Bottom Alert Bar
-================================================== -->
-<div class="alertbar">
-	<div class="container text-center">
-		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
-        <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
-            <div class="mc-field-group">
-            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
-            <input type="submit" value="Subscribe" name="subscribe" class="heart">
-            </div>
-        </form>
-	</div>
-</div>
-{% endif %}
-    
+
 </div>
 
-<!-- Minimal Categories Explore Section
+<!-- Explore Categories Section
 ================================================== -->
-<div class="explore-section-minimal py-5 mt-4" style="background-color: #f8f9fa; border-top: 1px solid #e9ecef;">
+<div class="explore-section-wrapper" style="margin-top: 2rem;">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-4">
-                <h3 style="color: #495057; font-weight: 400; margin-bottom: 0.5rem;">
-                    Browse by Category
-                </h3>
-                <p style="color: #6c757d; font-size: 0.95rem;">
-                    Find articles that interest you most
-                </p>
+                <h2 class="explore-title">Explore Topics</h2>
+                <p class="explore-subtitle">Discover articles across different categories</p>
             </div>
         </div>
-        
         <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="categories-list">
+            <div class="col-lg-10">
+                <div class="categories-grid">
                     {% assign categories_list = site.categories %}
                     {% if categories_list.first[0] == null %}
                         {% for category in categories_list %}
-                        <a href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}" 
-                           class="category-tag">
-                            {{ category | camelcase }}
-                            <span class="count">({{ site.tags[category].size }})</span>
+                        <a href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}" class="category-card-new">
+                            <div class="category-content">
+                                <h5 class="category-name">{{ category | camelcase }}</h5>
+                                <span class="category-count">{{ site.tags[category].size }} articles</span>
+                            </div>
                         </a>
                         {% endfor %}
                     {% else %}
                         {% for category in categories_list %}
-                        <a href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}" 
-                           class="category-tag">
-                            {{ category[0] | camelcase }}
-                            <span class="count">({{ category[1].size }})</span>
+                        <a href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}" class="category-card-new">
+                            <div class="category-content">
+                                <h5 class="category-name">{{ category[0] | camelcase }}</h5>
+                                <span class="category-count">{{ category[1].size }} articles</span>
+                            </div>
                         </a>
                         {% endfor %}
                     {% endif %}
@@ -185,58 +167,81 @@ ga('send', 'pageview');
 </div>
 
 <style>
-.categories-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
+.explore-section-wrapper {
+    background-color: #f7f9f8; /* A very light, elegant green-ish white */
+    padding: 4rem 0;
+    border-top: 1px solid #eef2f0;
+    border-bottom: 1px solid #eef2f0;
 }
 
-.category-tag {
-    display: inline-block;
-    background: white;
-    color: #495057;
-    padding: 0.75rem 1.25rem;
-    border-radius: 25px;
+.explore-title {
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #2c5c3f; /* Dark green for the title */
+    margin-bottom: 0.5rem;
+}
+
+.explore-subtitle {
+    font-size: 1.1rem;
+    color: #5a7d6a;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.category-card-new {
+    background: #ffffff;
+    border: 1px solid #e0e7e3;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
     text-decoration: none;
-    font-weight: 500;
+    color: #333;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.category-card-new:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(44, 92, 63, 0.1);
+    border-color: #2c5c3f;
+    text-decoration: none;
+    color: #2c5c3f;
+}
+
+.category-card-new .category-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: inherit;
+    margin-bottom: 0.25rem;
+}
+
+.category-card-new .category-count {
     font-size: 0.9rem;
-    border: 2px solid #e9ecef;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.category-tag:hover {
-    background: #007bff;
-    color: white;
-    border-color: #007bff;
-    text-decoration: none;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.25);
-}
-
-.category-tag .count {
     color: #6c757d;
-    font-weight: 400;
-    margin-left: 0.25rem;
 }
 
-.category-tag:hover .count {
-    color: rgba(255, 255, 255, 0.8);
+.category-card-new:hover .category-count {
+    color: #2c5c3f;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .categories-list {
-        gap: 0.5rem;
+    .categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
-    
-    .category-tag {
-        padding: 0.6rem 1rem;
-        font-size: 0.85rem;
+    .explore-section-wrapper {
+        padding: 3rem 0;
+    }
+    .explore-title {
+        font-size: 1.8rem;
     }
 }
 </style>
+
 <!-- Begin Footer
 ================================================== -->
 <footer class="footer">
