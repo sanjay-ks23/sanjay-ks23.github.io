@@ -269,6 +269,32 @@ ga('send', 'pageview');
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+    
+    .category-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .explore-section h2 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .explore-section {
+        padding: 3rem 0 !important;
+    }
+}
+</style>
 
 <!-- Begin Footer
 ================================================== -->
