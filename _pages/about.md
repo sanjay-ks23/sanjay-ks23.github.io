@@ -129,7 +129,7 @@ show_sitetitle: false
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/PyTorch.svg" alt="PyTorch"><span>PyTorch</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/TensorFlow.svg" alt="TensorFlow"><span>TensorFlow</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Keras.svg" alt="Keras"><span>Keras</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/hf-logo.svg" alt="Hugging Face"><span>HF Logo</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/hf-logo.svg" alt="Hugging Face"><span>Hugging Face</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/OpenCV.svg" alt="OpenCV"><span>OpenCV</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Pandas.svg" alt="Pandas"><span>Pandas</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/NumPy.svg" alt="NumPy"><span>NumPy</span></div>
