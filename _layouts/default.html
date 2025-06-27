@@ -141,45 +141,39 @@ ga('send', 'pageview');
     
 </div>
 
-<!-- Categories Jumbotron
+<!-- Minimal Categories Explore Section
 ================================================== -->
-<!-- Modern Categories Explore Section
-================================================== -->
-<div class="explore-section py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin-top: 2rem;">
+<div class="explore-section-minimal py-5 mt-4" style="background-color: #f8f9fa; border-top: 1px solid #e9ecef;">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-4">
-                <h2 class="text-white mb-2" style="font-weight: 300; font-size: 2.5rem;">
-                    Explore Topics
-                </h2>
-                <p class="text-white-50 mb-0" style="font-size: 1.1rem;">
-                    Discover articles across different categories
+                <h3 style="color: #495057; font-weight: 400; margin-bottom: 0.5rem;">
+                    Browse by Category
+                </h3>
+                <p style="color: #6c757d; font-size: 0.95rem;">
+                    Find articles that interest you most
                 </p>
             </div>
         </div>
         
         <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="categories-grid">
+            <div class="col-lg-8">
+                <div class="categories-list">
                     {% assign categories_list = site.categories %}
                     {% if categories_list.first[0] == null %}
                         {% for category in categories_list %}
                         <a href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}" 
-                           class="category-card">
-                            <div class="category-content">
-                                <h5 class="category-name">{{ category | camelcase }}</h5>
-                                <span class="category-count">{{ site.tags[category].size }} articles</span>
-                            </div>
+                           class="category-tag">
+                            {{ category | camelcase }}
+                            <span class="count">({{ site.tags[category].size }})</span>
                         </a>
                         {% endfor %}
                     {% else %}
                         {% for category in categories_list %}
                         <a href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}" 
-                           class="category-card">
-                            <div class="category-content">
-                                <h5 class="category-name">{{ category[0] | camelcase }}</h5>
-                                <span class="category-count">{{ category[1].size }} articles</span>
-                            </div>
+                           class="category-tag">
+                            {{ category[0] | camelcase }}
+                            <span class="count">({{ category[1].size }})</span>
                         </a>
                         {% endfor %}
                     {% endif %}
@@ -191,111 +185,58 @@ ga('send', 'pageview');
 </div>
 
 <style>
-.explore-section {
-    position: relative;
-    overflow: hidden;
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
-.explore-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    pointer-events: none;
-}
-
-.categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.category-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    padding: 2rem 1.5rem;
+.category-tag {
+    display: inline-block;
+    background: white;
+    color: #495057;
+    padding: 0.75rem 1.25rem;
+    border-radius: 25px;
     text-decoration: none;
-    color: white;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.category-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    transition: left 0.5s ease;
-}
-
-.category-card:hover::before {
-    left: 100%;
-}
-
-.category-card:hover {
-    transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    color: white;
-}
-
-.category-content {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.category-name {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: white;
-}
-
-.category-count {
+    font-weight: 500;
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: 400;
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-    .categories-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-    }
-    
-    .category-card {
-        padding: 1.5rem 1rem;
-    }
-    
-    .explore-section h2 {
-        font-size: 2rem !important;
-    }
+    border: 2px solid #e9ecef;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-@media (max-width: 480px) {
-    .categories-grid {
-        grid-template-columns: 1fr;
+.category-tag:hover {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.25);
+}
+
+.category-tag .count {
+    color: #6c757d;
+    font-weight: 400;
+    margin-left: 0.25rem;
+}
+
+.category-tag:hover .count {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .categories-list {
+        gap: 0.5rem;
     }
     
-    .explore-section {
-        padding: 3rem 0 !important;
+    .category-tag {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
     }
 }
 </style>
-
 <!-- Begin Footer
 ================================================== -->
 <footer class="footer">
