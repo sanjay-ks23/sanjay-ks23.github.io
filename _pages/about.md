@@ -27,23 +27,11 @@ show_sitetitle: false
         color: #fff;
         margin-bottom: 2rem;
     }
-    .about-main-content details {
-        margin-bottom: 1.5rem;
-        border-left: 3px solid #008080;
-        padding-left: 20px;
-    }
-    .about-main-content summary {
+    .about-main-content .section-title {
         font-size: 1.8rem;
         font-weight: 600;
         color: #005a5a;
-        cursor: pointer;
-        outline: none;
-        transition: all 0.3s ease;
-    }
-    .about-main-content summary:hover {
-        color: #008080;
-    }
-    .about-main-content details[open] summary {
+        margin-top: 2rem;
         margin-bottom: 1rem;
     }
     .about-main-content ul {
@@ -149,32 +137,26 @@ show_sitetitle: false
             <h1>Sanjay Kuppusamy Saravanan</h1>
             <p class="designation">Deep Learning Engineer</p>
 
-            <details>
-                <summary>Experience</summary>
-                <ul>
-                    <li><strong>AI/ML Engineer Intern at SlateMate, IIT Madras:</strong> Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework. Optimized AI models for on-device (edge) deployment, balancing performance, latency, and resource consumption to enable real-time analysis on mobile platforms.</li>
-                    <li><strong>Machine Learning Intern at National Institute of Wind Energy:</strong> Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction, achieving a Mean Squared Error (MSE) of 0.040.</li>
-                </ul>
-            </details>
+            <h2 class="section-title">Experience</h2>
+            <ul>
+                <li><strong>AI/ML Engineer Intern at SlateMate, IIT Madras:</strong> Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework. Optimized AI models for on-device (edge) deployment, balancing performance, latency, and resource consumption to enable real-time analysis on mobile platforms.</li>
+                <li><strong>Machine Learning Intern at National Institute of Wind Energy:</strong> Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction, achieving a Mean Squared Error (MSE) of 0.040.</li>
+            </ul>
 
-            <details>
-                <summary>Projects</summary>
-                <ul>
-                    <li>Enhanced Mistral 7b with SFT, Alpaca, PEFT, and DPO for improved instruction following.</li>
-                    <li>Developed an IoT solution for monitoring employees and preventing forklift accidents.</li>
-                    <li>Created an Intersection Traffic Management System (ITMS) using CV and Yolov7.</li>
-                    <li>Built an AI Malware Detection System with sandboxing and NLP to prevent malware attacks.</li>
-                </ul>
-            </details>
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li>Enhanced Mistral 7b with SFT, Alpaca, PEFT, and DPO for improved instruction following.</li>
+                <li>Developed an IoT solution for monitoring employees and preventing forklift accidents.</li>
+                <li>Created an Intersection Traffic Management System (ITMS) using CV and Yolov7.</li>
+                <li>Built an AI Malware Detection System with sandboxing and NLP to prevent malware attacks.</li>
+            </ul>
 
-            <details>
-                <summary>Publications & Certifications</summary>
-                <ul>
-                    <li>First author of an IEEE publication on autonomous safety compliance in industrial environments.</li>
-                    <li>Authored IEEE papers on securing patient health records with blockchain and a blockchain-enhanced patient triage system.</li>
-                    <li>Certified as an IBM AI Analyst and Oracle Cloud GenAI Professional.</li>
-                </ul>
-            </details>
+            <h2 class="section-title">Publications & Certifications</h2>
+            <ul>
+                <li>First author of an IEEE publication on autonomous safety compliance in industrial environments.</li>
+                <li>Authored IEEE papers on securing patient health records with blockchain and a blockchain-enhanced patient triage system.</li>
+                <li>Certified as an IBM AI Analyst and Oracle Cloud GenAI Professional.</li>
+            </ul>
         </div>
 
         <!-- Sidebar -->
@@ -196,7 +178,7 @@ show_sitetitle: false
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/PyTorch.svg" alt="PyTorch"><span>PyTorch</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/TensorFlow.svg" alt="TensorFlow"><span>TensorFlow</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Keras.svg" alt="Keras"><span>Keras</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Hugging-Face.svg" alt="Hugging Face"><span>HF Logo</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/hf logo.svg" alt="Hugging Face"><span>Hugging Face</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/OpenCV.svg" alt="OpenCV"><span>OpenCV</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Pandas.svg" alt="Pandas"><span>Pandas</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/NumPy.svg" alt="NumPy"><span>NumPy</span></div>
