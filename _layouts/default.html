@@ -117,19 +117,18 @@ ga('send', 'pageview');
 <div class="explore-section-wrapper" style="margin-top: 2rem; background: linear-gradient(to right, #008080, #005a5a); color: #fff; padding: 4rem 0;">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-6" style="border-right: 1px solid rgba(255, 255, 255, 0.5); padding-right: 2rem;">
                 <h2 class="explore-title" style="color: #fff;">Explore Topics</h2>
                 <p class="explore-subtitle" style="color: rgba(255, 255, 255, 0.8);">Discover articles across different categories</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" style="padding-left: 2rem;">
                 <div class="categories-grid">
                     {% assign categories_list = site.categories %}
                     {% if categories_list.first[0] == null %}
                         {% for category in categories_list %}
                         <a href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}" class="category-card-new">
                             <div class="category-content">
-                                <h5 class="category-name">{{ category | camelcase }}</h5>
-                                <span class="category-count">{{ site.tags[category].size }} articles</span>
+                                <h5 class="category-name" style="color: #fff;">{{ category | camelcase }}</h5>
                             </div>
                         </a>
                         {% endfor %}
@@ -137,8 +136,7 @@ ga('send', 'pageview');
                         {% for category in categories_list %}
                         <a href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}" class="category-card-new">
                             <div class="category-content">
-                                <h5 class="category-name">{{ category[0] | camelcase }}</h5>
-                                <span class="category-count">{{ category[1].size }} articles</span>
+                                <h5 class="category-name" style="color: #fff;">{{ category[0] | camelcase }}</h5>
                             </div>
                         </a>
                         {% endfor %}
