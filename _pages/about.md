@@ -12,15 +12,16 @@ show_sitetitle: false
         padding: 3rem 0;
     }
     .about-main-content h1 {
-        font-size: 2.8rem;
+        font-family: 'Righteous', cursive;
+        font-size: 3.5rem;
         font-weight: 700;
-        color: #005a5a;
+        color: #fff;
         margin-bottom: 0.5rem;
     }
     .about-main-content .designation {
         font-size: 1.5rem;
         font-weight: 300;
-        color: #008080;
+        color: #fff;
         margin-bottom: 2rem;
     }
     .about-main-content .section-title {
@@ -41,6 +42,7 @@ show_sitetitle: false
         margin-bottom: 1rem;
         position: relative;
         padding-left: 25px;
+        text-align: justify;
     }
     .about-main-content ul li:before {
         content: '•';
@@ -134,8 +136,8 @@ show_sitetitle: false
 
             <h2 class="section-title">Experience</h2>
             <ul>
-                <li><strong>AI/ML Engineer Intern at SlateMate, IIT Madras:</strong> Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework.</li>
-                <li><strong>Machine Learning Intern at National Institute of Wind Energy:</strong> Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction.</li>
+                <li><strong>AI/ML Engineer Intern at SlateMate, IIT Madras:</strong> Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework. Optimized AI models for on-device (edge) deployment, balancing performance, latency, and resource consumption to enable real-time analysis on mobile platforms.</li>
+                <li><strong>Machine Learning Intern at National Institute of Wind Energy:</strong> Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction, achieving a Mean Squared Error (MSE) of 0.040.</li>
             </ul>
 
             <h2 class="section-title">Projects</h2>
@@ -143,10 +145,15 @@ show_sitetitle: false
                 <li>Enhanced Mistral 7b with SFT, Alpaca, PEFT, and DPO for improved instruction following.</li>
                 <li>Developed an IoT solution for monitoring employees and preventing forklift accidents.</li>
                 <li>Created an Intersection Traffic Management System (ITMS) using CV and Yolov7.</li>
+                <li>Built an AI Malware Detection System with sandboxing and NLP to prevent malware attacks.</li>
             </ul>
 
-            <h2 class="section-title">Miscellaneous</h2>
-            <p>First author of three IEEE publications on topics including autonomous safety compliance, blockchain-based health records, and patient triage systems. Certified IBM AI Analyst and Oracle Cloud GenAI Professional.</p>
+            <h2 class="section-title">Publications & Certifications</h2>
+            <ul>
+                <li>First author of an IEEE publication on autonomous safety compliance in industrial environments.</li>
+                <li>Authored IEEE papers on securing patient health records with blockchain and a blockchain-enhanced patient triage system.</li>
+                <li>Certified as an IBM AI Analyst and Oracle Cloud GenAI Professional.</li>
+            </ul>
         </div>
 
         <!-- Sidebar -->
@@ -168,7 +175,7 @@ show_sitetitle: false
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/PyTorch.svg" alt="PyTorch"><span>PyTorch</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/TensorFlow.svg" alt="TensorFlow"><span>TensorFlow</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Keras.svg" alt="Keras"><span>Keras</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Hugging-Face.svg" alt="Hugging Face"><span>HF Logo</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/hf-logo.svg" alt="Hugging Face"><span>Hugging Face</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/OpenCV.svg" alt="OpenCV"><span>OpenCV</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Pandas.svg" alt="Pandas"><span>Pandas</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/NumPy.svg" alt="NumPy"><span>NumPy</span></div>
