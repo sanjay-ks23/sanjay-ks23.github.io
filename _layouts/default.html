@@ -102,7 +102,7 @@ ga('send', 'pageview');
 
 <!-- Site Title
 ================================================== -->
-{% if page.show_sitetitle != false %}
+{% if page.layout != 'post' and page.show_sitetitle != false %}
 <div class="mainheading">
     <h1 class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
