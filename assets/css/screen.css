@@ -188,8 +188,20 @@ section.recent-posts {
 }
 
 .post-top-meta .author-thumb {
-    width: 72px;
-    height: 72px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.post-top-meta .link-dark {
+    font-weight: 600;
+}
+.post-top-meta .post-date {
+    margin-left: 10px;
+    color: #999;
+}
+.mainheading h1.posttitle {
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .post-top-meta.authorpage .author-thumb {
