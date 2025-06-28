@@ -43,7 +43,7 @@ show_sitetitle: false
         position: relative;
         padding-left: 0px;
         text-align: justify;
-        margin-left: 20px
+        margin-left: 0px
     }
     .about-main-content ul li:before {
         content: '•';
