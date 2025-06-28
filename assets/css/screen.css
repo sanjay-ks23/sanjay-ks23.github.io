@@ -12,26 +12,26 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 a {
-    color: #00ab6b;
+    color: #008080;
     transition: all 0.2s;
 }
 
 a:hover {
-    color: #038252;
+    color: #005a5a;
     text-decoration: none;
 }
 
 pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: #E3EDF3 1px solid;
+    border: #e6f2f2 1px solid;
     width: 100%;
     padding: 7px;
     font-family: monospace, sans-serif;
     font-size: .9rem;
     white-space: pre;
     overflow: auto;
-    background: #fff;
+    background: #f7fafa;
     border-radius: 0px;
     line-height: 1.6;
     color: #333;
@@ -275,7 +275,7 @@ span.post-read-more a:hover {
 .mediumnavigation .form-inline .btn:hover,
 .mediumnavigation .form-inline .btn:active {
     background: transparent;
-    color: green;
+    color: #005a5a;
 }
 
 .mediumnavigation .navbar-brand {
@@ -337,7 +337,7 @@ span.post-read-more a:hover {
 }
 
 blockquote {
-    border-left: 4px solid #00ab6b;
+    border-left: 4px solid #005a5a;
     padding: 0 20px;
     font-style: italic;
     color: rgba(0, 0, 0, .5);
@@ -373,7 +373,7 @@ blockquote {
 }
 
 .share ul li i.fa {
-    border: 1px solid #ddd;
+    border: 1px solid #e6f2f2;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -432,7 +432,7 @@ blockquote {
     .alertbar input[type="email"] {
         margin-right: 0px !Important;
         display: block;
-        border-right: 1px solid #ddd !Important;
+        border-right: 1px solid #e6f2f2 !Important;
         margin-bottom: 10px;
     }
 
@@ -479,7 +479,7 @@ blockquote {
 }
 
 .graybg {
-    background-color: #fafafa;
+    background-color: #f7fafa;
     padding: 40px 0 46px;
     position: relative;
 }
@@ -489,26 +489,15 @@ blockquote {
     border: 0;
 }
 
-ul.tags {
-    list-style: none;
-    padding-left: 0;
-    margin: 0 0 3rem 0;
-}
-
-ul.tags li {
-    display: inline-block;
-    font-size: 0.9rem;
-}
-
 ul.tags li a {
-    background: rgba(0, 0, 0, .05);
+    background: #e6f2f2;
     color: rgba(0, 0, 0, .6);
     border-radius: 3px;
     padding: 5px 10px;
 }
 
 ul.tags li a:hover {
-    background: rgba(0, 0, 0, .07);
+    background: #d9e9e9;
     text-decoration: none;
 }
 
@@ -519,24 +508,28 @@ ul.tags li a:hover {
 .sep {
     height: 1px;
     width: 20px;
-    background: #999;
+    background: #e6f2f2;
     margin: 0px auto;
     margin-bottom: 1.2rem;
 }
 
 .btn.follow {
-    border-color: #02B875;
-    color: #1C9963;
+    border-color: #008080;
+    color: #008080;
     padding: 3px 10px;
     text-align: center;
     border-radius: 999em;
     font-size: 0.85rem;
     display: inline-block;
+    background: linear-gradient(to right, #008080, #005a5a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 128, 128, 0.3);
 }
 
 .btn.subscribe {
-    background-color: #1C9963;
-    border-color: #1C9963;
+    background: linear-gradient(to right, #008080, #005a5a);
+    border-color: #008080;
     color: rgba(255, 255, 255, 1);
     fill: rgba(255, 255, 255, 1);
     border-radius: 30px;
@@ -544,6 +537,7 @@ ul.tags li a:hover {
     margin-left: 10px;
     font-weight: 600;
     text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 128, 128, 0.4);
 }
 
 .post-top-meta .btn.follow {
@@ -552,7 +546,7 @@ ul.tags li a:hover {
 }
 
 .alertbar {
-    box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .0785);
+    box-shadow: 0 -6px 15px rgba(0, 128, 128, 0.2);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -572,7 +566,7 @@ ul.tags li a:hover {
     padding: 3px 5px 3px 10px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-    border: 1px solid #ddd;
+    border: 1px solid #e6f2f2;
     border-right: 0;
     margin-right: -10px;
     height: 34px;
@@ -581,8 +575,8 @@ ul.tags li a:hover {
 }
 
 .alertbar input[type="submit"] {
-    background-color: #1C9963;
-    border: 1px solid #1C9963;
+    background-color: #008080;
+    border: 1px solid #008080;
     color: rgba(255, 255, 255, 1);
     fill: rgba(255, 255, 255, 1);
     font-size: 0.85rem;
@@ -652,12 +646,8 @@ ul.tags li a:hover {
     width: 100%;
 }
 
-.sociallinks {
-    margin: 1rem 0;
-}
-
 .sociallinks a {
-    background: #666;
+    background: #008080;
     color: #fff;
     width: 22px;
     height: 22px;
@@ -730,7 +720,7 @@ img {
     text-align: center;
     margin-bottom: 0rem;
     color: #999;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #e6f2f2;
 }
 
 .pointerup {
@@ -740,7 +730,7 @@ img {
 }
 
 .pointerup i.fa {
-    color: #eaeaea;
+    color: #e6f2f2;
 }
 
 .bottompagination span.navigation i {
@@ -798,7 +788,7 @@ iframe {
 
 .jumbotron.fortags a {
     padding: 5px 10px 7px;
-    background: #222;
+    background: #008080;
     border-radius: 30px;
     color: #fff;
     font-weight: 500;
@@ -867,7 +857,7 @@ iframe {
     top: 45%;
     left: calc(50% - 100px);
     text-shadow: none;
-    background: #222;
+    background: #008080;
     color: #fff;
     display: inline-block;
     font-size: 13px;
@@ -890,7 +880,7 @@ iframe {
     border: 0 none;
     opacity: 1;
     transition: opacity .25s;
-    background: #f2f2f2;
+    background: #f7fafa;
     outline: 0 none;
 }
 
