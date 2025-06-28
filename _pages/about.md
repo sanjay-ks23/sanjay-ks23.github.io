@@ -9,10 +9,10 @@ show_sitetitle: false
 
 <style>
     .about-page-container {
-        padding: 3rem 0;
+        padding: 0;
     }
     .about-main-content {
-        padding-left: 0;
+        padding: 3rem 2rem;
     }
     .about-main-content h1 {
         font-family: 'Righteous', cursive;
@@ -61,6 +61,7 @@ show_sitetitle: false
     .about-sidebar {
         position: sticky;
         top: 80px;
+        padding: 3rem 2rem;
     }
     .about-sidebar h4 {
         font-size: 1.4rem;
@@ -130,72 +131,70 @@ show_sitetitle: false
     }
 </style>
 
-<div class="container about-page-container">
-    <div class="row">
-        <!-- Main Content -->
-        <div class="col-lg-7 about-main-content">
-            <h1>Sanjay Kuppusamy Saravanan</h1>
-            <p class="designation">Deep Learning Engineer</p>
+<div class="row">
+    <!-- Main Content -->
+    <div class="col-lg-7 about-main-content">
+        <h1>Sanjay Kuppusamy Saravanan</h1>
+        <p class="designation">Deep Learning Engineer</p>
 
-            <h2 class="section-title">Experience</h2>
-            <ul>
-                <li><strong>AI/ML Engineer Intern at SlateMate, IIT Madras:</strong> Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework. Optimized AI models for on-device (edge) deployment, balancing performance, latency, and resource consumption to enable real-time analysis on mobile platforms.</li>
-                <li><strong>Machine Learning Intern at National Institute of Wind Energy:</strong> Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction, achieving a Mean Squared Error (MSE) of 0.040.</li>
-            </ul>
+        <h2 class="section-title">Experience</h2>
+        <ul>
+            <li><strong>AI/ML Engineer Intern at SlateMate, IIT Madras:</strong> Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework. Optimized AI models for on-device (edge) deployment, balancing performance, latency, and resource consumption to enable real-time analysis on mobile platforms.</li>
+            <li><strong>Machine Learning Intern at National Institute of Wind Energy:</strong> Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction, achieving a Mean Squared Error (MSE) of 0.040.</li>
+        </ul>
 
-            <h2 class="section-title">Projects</h2>
-            <ul>
-                <li>Enhanced Mistral 7b with SFT, Alpaca, PEFT, and DPO for improved instruction following.</li>
-                <li>Developed an IoT solution for monitoring employees and preventing forklift accidents.</li>
-                <li>Created an Intersection Traffic Management System (ITMS) using CV and Yolov7.</li>
-                <li>Built an AI Malware Detection System with sandboxing and NLP to prevent malware attacks.</li>
-            </ul>
+        <h2 class="section-title">Projects</h2>
+        <ul>
+            <li>Enhanced Mistral 7b with SFT, Alpaca, PEFT, and DPO for improved instruction following.</li>
+            <li>Developed an IoT solution for monitoring employees and preventing forklift accidents.</li>
+            <li>Created an Intersection Traffic Management System (ITMS) using CV and Yolov7.</li>
+            <li>Built an AI Malware Detection System with sandboxing and NLP to prevent malware attacks.</li>
+        </ul>
 
-            <h2 class="section-title">Publications & Certifications</h2>
-            <ul>
-                <li>First author of an IEEE publication on autonomous safety compliance in industrial environments.</li>
-                <li>Authored IEEE papers on securing patient health records with blockchain and a blockchain-enhanced patient triage system.</li>
-                <li>Certified as an IBM AI Analyst and Oracle Cloud GenAI Professional.</li>
-            </ul>
-        </div>
+        <h2 class="section-title">Publications & Certifications</h2>
+        <ul>
+            <li>First author of an IEEE publication on autonomous safety compliance in industrial environments.</li>
+            <li>Authored IEEE papers on securing patient health records with blockchain and a blockchain-enhanced patient triage system.</li>
+            <li>Certified as an IBM AI Analyst and Oracle Cloud GenAI Professional.</li>
+        </ul>
+    </div>
 
-        <!-- Sidebar -->
-        <div class="col-lg-4 offset-lg-1">
-            <div class="about-sidebar">
-                <h4>Contact Me</h4>
-                <div class="contact-links">
-                    <a href="https://linkedin.com/in/sanjayks2317" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
-                    <a href="https://twitter.com/Sanj_AI_space" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-                    <a href="https://github.com/sanjay-ks23" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-                </div>
+    <!-- Sidebar -->
+    <div class="col-lg-4 offset-lg-1">
+        <div class="about-sidebar">
+            <h4>Contact Me</h4>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/sanjayks2317" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+                <a href="https://twitter.com/Sanj_AI_space" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://github.com/sanjay-ks23" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+            </div>
 
-                <div class="tech-stack-sidebar">
-                    <h4>My Tech Stack</h4>
-                    <div class="tech-category-sidebar">
-                        <h5>Core ML & Data</h5>
-                        <div class="tech-stack-grid-sidebar">
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Python.svg" alt="Python"><span>Python</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/PyTorch.svg" alt="PyTorch"><span>PyTorch</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/TensorFlow.svg" alt="TensorFlow"><span>TensorFlow</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Keras.svg" alt="Keras"><span>Keras</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/hf logo.svg" alt="Hugging Face"><span>Hugging Face</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/OpenCV.svg" alt="OpenCV"><span>OpenCV</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Pandas.svg" alt="Pandas"><span>Pandas</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/NumPy.svg" alt="NumPy"><span>NumPy</span></div>
-                        </div>
+            <div class="tech-stack-sidebar">
+                <h4>My Tech Stack</h4>
+                <div class="tech-category-sidebar">
+                    <h5>Core ML & Data</h5>
+                    <div class="tech-stack-grid-sidebar">
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Python.svg" alt="Python"><span>Python</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/PyTorch.svg" alt="PyTorch"><span>PyTorch</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/TensorFlow.svg" alt="TensorFlow"><span>TensorFlow</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Keras.svg" alt="Keras"><span>Keras</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/hf logo.svg" alt="Hugging Face"><span>Hugging Face</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/OpenCV.svg" alt="OpenCV"><span>OpenCV</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Pandas.svg" alt="Pandas"><span>Pandas</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/NumPy.svg" alt="NumPy"><span>NumPy</span></div>
                     </div>
-                    <div class="tech-category-sidebar">
-                        <h5>Development & Tools</h5>
-                        <div class="tech-stack-grid-sidebar">
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Git.svg" alt="Git"><span>Git</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/GitHub.svg" alt="GitHub"><span>GitHub</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Jupyter.svg" alt="Jupyter"><span>Jupyter</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Visual-Studio-Code-(VS-Code).svg" alt="VS Code"><span>VS Code</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Vim.svg" alt="Vim"><span>Vim</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Streamlit.svg" alt="Streamlit"><span>Streamlit</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Kaggle.svg" alt="Kaggle"><span>Kaggle</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Ubuntu.svg" alt="Ubuntu"><span>Ubuntu</span></div>
-                        </div>
+                </div>
+                <div class="tech-category-sidebar">
+                    <h5>Development & Tools</h5>
+                    <div class="tech-stack-grid-sidebar">
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Git.svg" alt="Git"><span>Git</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/GitHub.svg" alt="GitHub"><span>GitHub</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Jupyter.svg" alt="Jupyter"><span>Jupyter</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Visual-Studio-Code-(VS-Code).svg" alt="VS Code"><span>VS Code</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Vim.svg" alt="Vim"><span>Vim</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Streamlit.svg" alt="Streamlit"><span>Streamlit</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Kaggle.svg" alt="Kaggle"><span>Kaggle</span></div>
+                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Ubuntu.svg" alt="Ubuntu"><span>Ubuntu</span></div>
                     </div>
                 </div>
             </div>
