@@ -12,7 +12,7 @@ show_sitetitle: false
         padding: 3rem 0;
     }
     .about-main-content {
-        padding-left: 0 !important;
+        padding-left: 0;
     }
     .about-main-content h1 {
         font-family: 'Righteous', cursive;
@@ -20,8 +20,6 @@ show_sitetitle: false
         font-weight: 700;
         color: #fff;
         margin-bottom: 0.5rem;
-        margin-left: 0 !important;
-        padding-left: 0 !important;
     }
     .about-main-content .designation {
         font-size: 1.5rem;
@@ -29,11 +27,23 @@ show_sitetitle: false
         color: #fff;
         margin-bottom: 2rem;
     }
-    .about-main-content .section-title {
+    .about-main-content details {
+        margin-bottom: 1.5rem;
+        border-left: 3px solid #008080;
+        padding-left: 20px;
+    }
+    .about-main-content summary {
         font-size: 1.8rem;
         font-weight: 600;
         color: #005a5a;
-        margin-top: 2rem;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+    .about-main-content summary:hover {
+        color: #008080;
+    }
+    .about-main-content details[open] summary {
         margin-bottom: 1rem;
     }
     .about-main-content ul {
@@ -46,9 +56,8 @@ show_sitetitle: false
         color: #333;
         margin-bottom: 1rem;
         position: relative;
-        padding-left: 0px;
+        padding-left: 25px;
         text-align: justify;
-        margin-left: 10px
     }
     .about-main-content ul li:before {
         content: '•';
@@ -56,9 +65,9 @@ show_sitetitle: false
         font-weight: bold;
         display: inline-block;
         width: 1em;
-        margin-left: 0;
+        margin-left: -1em;
         position: absolute;
-        left: 10px;
+        left: 0;
     }
 
     .about-sidebar {
@@ -71,25 +80,25 @@ show_sitetitle: false
         color: #005a5a;
         margin-bottom: 1.5rem;
     }
-    .contact-buttons .btn {
+    .contact-links a {
         display: flex;
         align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 0.75rem;
-        padding: 0.7rem 0;
-        font-weight: 600;
-        border-radius: 5px;
+        margin-bottom: 1rem;
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
         transition: all 0.3s ease;
-        border: 1px solid transparent;
-        box-shadow: 0 2px 4px rgba(0, 128, 128, 0.2);
     }
-    .btn-linkedin { background: linear-gradient(to right, #008080, #005a5a); color: white; }
-    .btn-linkedin:hover { box-shadow: 0 4px 8px rgba(0, 128, 128, 0.4); }
-    .btn-twitter { background: linear-gradient(to right, #008080, #005a5a); color: white; }
-    .btn-twitter:hover { box-shadow: 0 4px 8px rgba(0, 128, 128, 0.4); }
-    .btn-github { background: linear-gradient(to right, #008080, #005a5a); color: white; }
-    .btn-github:hover { box-shadow: 0 4px 8px rgba(0, 128, 128, 0.4); }
+    .contact-links a:hover {
+        color: #008080;
+        transform: translateX(5px);
+    }
+    .contact-links a i {
+        color: #008080;
+        margin-right: 10px;
+        width: 20px;
+        text-align: center;
+    }
 
     .tech-stack-sidebar {
         margin-top: 3rem;
@@ -140,36 +149,42 @@ show_sitetitle: false
             <h1>Sanjay Kuppusamy Saravanan</h1>
             <p class="designation">Deep Learning Engineer</p>
 
-            <h2 class="section-title">Experience</h2>
-            <ul>
-                <li><strong>AI/ML Engineer Intern at SlateMate, IIT Madras:</strong> Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework. Optimized AI models for on-device (edge) deployment, balancing performance, latency, and resource consumption to enable real-time analysis on mobile platforms.</li>
-                <li><strong>Machine Learning Intern at National Institute of Wind Energy:</strong> Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction, achieving a Mean Squared Error (MSE) of 0.040.</li>
-            </ul>
+            <details>
+                <summary>Experience</summary>
+                <ul>
+                    <li><strong>AI/ML Engineer Intern at SlateMate, IIT Madras:</strong> Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework. Optimized AI models for on-device (edge) deployment, balancing performance, latency, and resource consumption to enable real-time analysis on mobile platforms.</li>
+                    <li><strong>Machine Learning Intern at National Institute of Wind Energy:</strong> Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction, achieving a Mean Squared Error (MSE) of 0.040.</li>
+                </ul>
+            </details>
 
-            <h2 class="section-title">Projects</h2>
-            <ul>
-                <li>Enhanced Mistral 7b with SFT, Alpaca, PEFT, and DPO for improved instruction following.</li>
-                <li>Developed an IoT solution for monitoring employees and preventing forklift accidents.</li>
-                <li>Created an Intersection Traffic Management System (ITMS) using CV and Yolov7.</li>
-                <li>Built an AI Malware Detection System with sandboxing and NLP to prevent malware attacks.</li>
-            </ul>
+            <details>
+                <summary>Projects</summary>
+                <ul>
+                    <li>Enhanced Mistral 7b with SFT, Alpaca, PEFT, and DPO for improved instruction following.</li>
+                    <li>Developed an IoT solution for monitoring employees and preventing forklift accidents.</li>
+                    <li>Created an Intersection Traffic Management System (ITMS) using CV and Yolov7.</li>
+                    <li>Built an AI Malware Detection System with sandboxing and NLP to prevent malware attacks.</li>
+                </ul>
+            </details>
 
-            <h2 class="section-title">Publications & Certifications</h2>
-            <ul>
-                <li>First author of an IEEE publication on autonomous safety compliance in industrial environments.</li>
-                <li>Authored IEEE papers on securing patient health records with blockchain and a blockchain-enhanced patient triage system.</li>
-                <li>Certified as an IBM AI Analyst and Oracle Cloud GenAI Professional.</li>
-            </ul>
+            <details>
+                <summary>Publications & Certifications</summary>
+                <ul>
+                    <li>First author of an IEEE publication on autonomous safety compliance in industrial environments.</li>
+                    <li>Authored IEEE papers on securing patient health records with blockchain and a blockchain-enhanced patient triage system.</li>
+                    <li>Certified as an IBM AI Analyst and Oracle Cloud GenAI Professional.</li>
+                </ul>
+            </details>
         </div>
 
         <!-- Sidebar -->
         <div class="col-lg-4 offset-lg-1">
             <div class="about-sidebar">
                 <h4>Contact Me</h4>
-                <div class="contact-buttons">
-                    <a href="https://linkedin.com/in/sanjayks2317" target="_blank" class="btn btn-linkedin"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
-                    <a href="https://twitter.com/Sanj_AI_space" target="_blank" class="btn btn-twitter"><i class="fab fa-twitter mr-2"></i>Twitter</a>
-                    <a href="https://github.com/sanjay-ks23" target="_blank" class="btn btn-github"><i class="fab fa-github mr-2"></i>GitHub</a>
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/sanjayks2317" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+                    <a href="https://twitter.com/Sanj_AI_space" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                    <a href="https://github.com/sanjay-ks23" target="_blank"><i class="fab fa-github"></i>GitHub</a>
                 </div>
 
                 <div class="tech-stack-sidebar">
