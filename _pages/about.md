@@ -11,12 +11,17 @@ show_sitetitle: false
     .about-page-container {
         padding: 3rem 0;
     }
+    .about-main-content {
+        padding-left: 0 !important;
+    }
     .about-main-content h1 {
         font-family: 'Righteous', cursive;
         font-size: 3.5rem;
         font-weight: 700;
         color: #fff;
         margin-bottom: 0.5rem;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
     }
     .about-main-content .designation {
         font-size: 1.5rem;
@@ -43,7 +48,7 @@ show_sitetitle: false
         position: relative;
         padding-left: 0px;
         text-align: justify;
-        margin-left: 0px
+        margin-left: 10px
     }
     .about-main-content ul li:before {
         content: '•';
