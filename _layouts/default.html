@@ -94,7 +94,11 @@ ga('send', 'pageview');
 
 <div class="site-content">
 
+{% if page.permalink == '/about/' %}
+<div class="container-fluid">
+{% else %}
 <div class="container">
+{% endif %}
 
 <!-- Site Title
 ================================================== -->
@@ -116,7 +120,7 @@ ga('send', 'pageview');
 {% if page.show_explore != false %}
 <!-- Explore Categories Section
 ================================================== -->
-<div class="explore-section-wrapper" style="margin-top: 2rem; background: linear-gradient(to right, #008080, #005a5a); color: #fff; padding: 4rem 0;">
+<div class="explore-section-wrapper" style="margin-top: 2rem; background: linear-gradient(to right, #008080, #004d4d); color: #fff; padding: 4rem 0;">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6" style="border-right: 1px solid #fff; padding-right: 2rem;">
