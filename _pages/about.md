@@ -9,187 +9,186 @@ show_sitetitle: false
 
 <style>
     .about-page-container {
-        padding: 0;
+        padding: 3rem 0;
     }
-    .about-header {
-        background: linear-gradient(to right, #008080, #005a5a);
-        color: #fff;
-        padding: 4rem 2rem;
-        text-align: center;
-        border-radius: 8px;
-        margin-bottom: 3rem;
-        box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
-    }
-    .about-header h1 {
-        font-size: 3.5rem;
-        font-weight: 700;
-        margin: 0;
-    }
-    .about-header p {
-        font-size: 1.5rem;
-        margin: 0;
-        font-weight: 300;
-    }
-    .section-card {
-        background: #fff;
-        padding: 2rem;
-        border-radius: 8px;
-        margin-bottom: 2rem;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        border-left: 5px solid #008080;
-    }
-    .section-card h2 {
-        font-size: 2rem;
+    .about-main-content h1 {
+        font-size: 2.8rem;
         font-weight: 700;
         color: #005a5a;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
     }
-    .item {
-        margin-bottom: 1.5rem;
+    .about-main-content .designation {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #008080;
+        margin-bottom: 2rem;
     }
-    .item h3 {
+    .about-main-content .section-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #005a5a;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .about-main-content ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .about-main-content ul li {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 1rem;
+        position: relative;
+        padding-left: 25px;
+    }
+    .about-main-content ul li:before {
+        content: '•';
+        color: #008080;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        position: absolute;
+        left: 0;
+    }
+
+    .about-sidebar {
+        position: sticky;
+        top: 80px;
+    }
+    .about-sidebar h4 {
         font-size: 1.4rem;
         font-weight: 600;
-        color: #008080;
-    }
-    .item p {
-        margin-bottom: 0.5rem;
-        color: #333;
-    }
-    .item ul {
-        padding-left: 20px;
-        color: #555;
-    }
-    .skills-list {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .skills-list li {
-        background: #e6f2f2;
         color: #005a5a;
-        padding: 8px 15px;
-        border-radius: 20px;
+        margin-bottom: 1.5rem;
+    }
+    .contact-buttons .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0.75rem;
+        padding: 0.7rem 0;
+        font-weight: 600;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+        box-shadow: 0 2px 4px rgba(0, 128, 128, 0.2);
+    }
+    .btn-linkedin { background: linear-gradient(to right, #008080, #005a5a); color: white; }
+    .btn-linkedin:hover { box-shadow: 0 4px 8px rgba(0, 128, 128, 0.4); }
+    .btn-twitter { background: linear-gradient(to right, #008080, #005a5a); color: white; }
+    .btn-twitter:hover { box-shadow: 0 4px 8px rgba(0, 128, 128, 0.4); }
+    .btn-github { background: linear-gradient(to right, #008080, #005a5a); color: white; }
+    .btn-github:hover { box-shadow: 0 4px 8px rgba(0, 128, 128, 0.4); }
+
+    .tech-stack-sidebar {
+        margin-top: 3rem;
+    }
+    .tech-category-sidebar {
+        margin-bottom: 2.5rem;
+    }
+    .tech-category-sidebar h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #005a5a;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    .tech-stack-grid-sidebar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.75rem 1rem;
+    }
+    .tech-icon-sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.6rem;
+        transition: transform 0.2s ease;
+    }
+    .tech-icon-sidebar:hover {
+        transform: scale(1.1);
+    }
+    .tech-icon-sidebar img {
+        height: 35px;
+        width: 35px;
+        object-fit: contain;
+    }
+    .tech-icon-sidebar span {
+        font-size: 0.75rem;
+        color: #7f8c8d;
         font-weight: 500;
     }
 </style>
 
 <div class="container about-page-container">
+    <div class="row">
+        <!-- Main Content -->
+        <div class="col-lg-7 about-main-content">
+            <h1>Sanjay Kuppusamy Saravanan</h1>
+            <p class="designation">Deep Learning Engineer</p>
 
-    <div class="about-header">
-        <h1>Sanjay Kuppusamy Saravanan</h1>
-        <p>Deep Learning Engineer</p>
-    </div>
-
-    <div class="section-card">
-        <h2>Education</h2>
-        <div class="item">
-            <h3>B.Tech in Computer Science Engineering with spl. in AI and ML</h3>
-            <p>Vellore Institute of Technology (2020 - 2024)</p>
-            <p><strong>GPA:</strong> 8.88/10</p>
-        </div>
-        <div class="item">
-            <h3>Central Board of Senior Education (CBSE)</h3>
-            <p>Maharishi Vidya Mandir (2018 - 2020)</p>
-            <p><strong>HSC:</strong> 90.6% | <strong>SSC:</strong> 93.2%</p>
-        </div>
-    </div>
-
-    <div class="section-card">
-        <h2>Experience</h2>
-        <div class="item">
-            <h3>AI/ML Engineer Intern</h3>
-            <p>SlateMate, IIT Madras (June 2025 - Ongoing)</p>
+            <h2 class="section-title">Experience</h2>
             <ul>
-                <li>Conducted research and analysis on state-of-the-art AI/ML algorithms for content classification, focusing on text, image, and video analysis to ensure user safety and platform integrity.</li>
-                <li>Contributed to the design of a multi-layered content moderation framework, integrating rules-based logic with dynamic AI-driven filtering.</li>
-                <li>Optimized AI models for on-device (edge) deployment, balancing performance, latency, and resource consumption to enable real-time analysis on mobile platforms.</li>
+                <li><strong>AI/ML Engineer Intern at SlateMate, IIT Madras:</strong> Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework.</li>
+                <li><strong>Machine Learning Intern at National Institute of Wind Energy:</strong> Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction.</li>
             </ul>
-        </div>
-        <div class="item">
-            <h3>Machine Learning Intern</h3>
-            <p>National Institute of Wind Energy, Government of India (October 2024 - March 2025)</p>
+
+            <h2 class="section-title">Projects</h2>
             <ul>
-                <li>Collaborated with Dr. Julian Antony Quick (contributor to TOPFARM), Technical University of Denmark, on advanced wind energy forecasting initiatives.</li>
-                <li>Led the design and evaluation of predictive models for Annual Energy Production (AEP) using meteorological data from regional wind farms.</li>
-                <li>Engineered a Temporal Fusion Transformer from scratch with Monte Carlo simulation to predict uncertainty and finally to forecast multi-year AEP; achieved a Mean Squared Error (MSE) of 0.040.</li>
+                <li>Enhanced Mistral 7b with SFT, Alpaca, PEFT, and DPO for improved instruction following.</li>
+                <li>Developed an IoT solution for monitoring employees and preventing forklift accidents.</li>
+                <li>Created an Intersection Traffic Management System (ITMS) using CV and Yolov7.</li>
             </ul>
+
+            <h2 class="section-title">Miscellaneous</h2>
+            <p>First author of three IEEE publications on topics including autonomous safety compliance, blockchain-based health records, and patient triage systems. Certified IBM AI Analyst and Oracle Cloud GenAI Professional.</p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-4 offset-lg-1">
+            <div class="about-sidebar">
+                <h4>Contact Me</h4>
+                <div class="contact-buttons">
+                    <a href="https://linkedin.com/in/sanjayks2317" target="_blank" class="btn btn-linkedin"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                    <a href="https://twitter.com/Sanj_AI_space" target="_blank" class="btn btn-twitter"><i class="fab fa-twitter mr-2"></i>Twitter</a>
+                    <a href="https://github.com/sanjay-ks23" target="_blank" class="btn btn-github"><i class="fab fa-github mr-2"></i>GitHub</a>
+                </div>
+
+                <div class="tech-stack-sidebar">
+                    <h4>My Tech Stack</h4>
+                    <div class="tech-category-sidebar">
+                        <h5>Core ML & Data</h5>
+                        <div class="tech-stack-grid-sidebar">
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Python.svg" alt="Python"><span>Python</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/PyTorch.svg" alt="PyTorch"><span>PyTorch</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/TensorFlow.svg" alt="TensorFlow"><span>TensorFlow</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Keras.svg" alt="Keras"><span>Keras</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Hugging-Face.svg" alt="Hugging Face"><span>HF Logo</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/OpenCV.svg" alt="OpenCV"><span>OpenCV</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Pandas.svg" alt="Pandas"><span>Pandas</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/NumPy.svg" alt="NumPy"><span>NumPy</span></div>
+                        </div>
+                    </div>
+                    <div class="tech-category-sidebar">
+                        <h5>Development & Tools</h5>
+                        <div class="tech-stack-grid-sidebar">
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Git.svg" alt="Git"><span>Git</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/GitHub.svg" alt="GitHub"><span>GitHub</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Jupyter.svg" alt="Jupyter"><span>Jupyter</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Visual-Studio-Code-(VS-Code).svg" alt="VS Code"><span>VS Code</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Vim.svg" alt="Vim"><span>Vim</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Streamlit.svg" alt="Streamlit"><span>Streamlit</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Kaggle.svg" alt="Kaggle"><span>Kaggle</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Ubuntu.svg" alt="Ubuntu"><span>Ubuntu</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="section-card">
-        <h2>Publications</h2>
-        <div class="item">
-            <h3>First Author: Automated Safety Compliance Monitoring in Industrial Environments with Autonomous Rover, (IEEE)</h3>
-            <ul>
-                <li>Engineered an autonomous edge AI system for industrial safety compliance on NVIDIA Jetson, Triton Server, and DeepStream SDK. Optimized and deployed a YOLO model (97.8% precision, 60 fps) with Azure IoT Hub integration. Conducted comparative analysis of embedded systems (Jetson vs. Raspberry Pi) to propose a low-latency, scalable framework.</li>
-            </ul>
-        </div>
-        <div class="item">
-            <h3>Securing Patient Health Records Using Blockchain, (IEEE)</h3>
-            <ul>
-                <li>Designed a decentralised health record system (Ethereum, IPFS) for patient-centric data ownership and secure, selective record sharing.</li>
-            </ul>
-        </div>
-        <div class="item">
-            <h3>Blockchain Enhanced Patient Triage System, (IEEE)</h3>
-            <ul>
-                <li>Developed a triage platform (React.js, Ethereum, IPFS, NLP) for automated medical entity extraction, ADE detection, and secure data sharing.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="section-card">
-        <h2>Projects</h2>
-        <ul>
-            <li>Enhancing Mistral 7b - SFT with Alpaca + PEFT + DPO on HH-RLHF for better Instruction Following capabilities.</li>
-            <li>Industrial Presentation on IoT Solution for monitoring employees and preventing forklift reversing accidents (Edge AI), Hannon Systems.</li>
-            <li>Intersection Traffic Management System (ITMS) - CV Yolov7</li>
-            <li>AI Malware Detection System - Sandboxing with Azure - NLP ML to prevent malware attacks.</li>
-            <li>Rhesus macaque trespassing with ultrasonic sound waves and Calcium Carbide Cannon using CV- VIT Seed Fund Project.</li>
-        </ul>
-    </div>
-
-    <div class="section-card">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>Python</li>
-            <li>TensorFlow</li>
-            <li>PyTorch</li>
-            <li>Cloud Computing (Azure, IBM, GCP)</li>
-            <li>Edge Computing</li>
-            <li>Deep Learning</li>
-            <li>Reinforcement Learning</li>
-            <li>Data Structures and Algorithm Design</li>
-            <li>Git</li>
-            <li>Linux</li>
-            <li>Predictive Modelling</li>
-            <li>Computer Vision</li>
-            <li>NLP</li>
-            <li>LLM</li>
-            <li>Web Scraping</li>
-            <li>RAG</li>
-            <li>Blockchain</li>
-            <li>IoT</li>
-        </ul>
-    </div>
-
-    <div class="section-card">
-        <h2>Certifications</h2>
-        <div class="item">
-            <h3>IBM AI Analyst</h3>
-            <p>Apr 2023 - May 2023</p>
-        </div>
-        <div class="item">
-            <h3>Oracle Cloud GenAI Professional</h3>
-            <p>May 2024 - Jun 2024</p>
-        </div>
-        <div class="item">
-            <h3>IELTS Academic</h3>
-            <p>Grade: 7.5 (Jun 2024)</p>
-        </div>
-    </div>
-
 </div>
