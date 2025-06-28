@@ -39,18 +39,9 @@ pre {
 }
 
 .mediumnavigation {
-    background: linear-gradient(to right, #008080, #005a5a);
-    box-shadow: 0 4px 8px rgba(0, 128, 128, 0.3);
+    background: rgba(255, 255, 255, .97);
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
     transition: top 0.2s ease-in-out;
-}
-.mediumnavigation .nav-item .nav-link {
-    color: #fff;
-}
-.mediumnavigation .nav-item .nav-link:hover {
-    color: #e6f2f2;
-}
-.mediumnavigation .navbar-brand {
-    color: #fff;
 }
 
 .main-content {
@@ -263,11 +254,16 @@ span.post-read-more a:hover {
 }
 
 .mediumnavigation .form-control {
-    font-size: 0.8rem;
-    border-radius: 30px;
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.09);
-    min-width: 180px;
+    font-size: 0.9rem;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding-left: 0;
+    background-color: transparent;
+}
+.mediumnavigation .form-control:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #008080;
 }
 
 .mediumnavigation .form-inline {
