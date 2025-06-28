@@ -41,8 +41,9 @@ show_sitetitle: false
         color: #333;
         margin-bottom: 1rem;
         position: relative;
-        padding-left: 25px;
+        padding-left: 0px;
         text-align: justify;
+        margin-left: 20px
     }
     .about-main-content ul li:before {
         content: '•';
@@ -50,9 +51,9 @@ show_sitetitle: false
         font-weight: bold;
         display: inline-block;
         width: 1em;
-        margin-left: -1em;
+        margin-left: 0;
         position: absolute;
-        left: 0;
+        left: 10px;
     }
 
     .about-sidebar {
@@ -175,7 +176,7 @@ show_sitetitle: false
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/PyTorch.svg" alt="PyTorch"><span>PyTorch</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/TensorFlow.svg" alt="TensorFlow"><span>TensorFlow</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Keras.svg" alt="Keras"><span>Keras</span></div>
-                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/hf-logo.svg" alt="Hugging Face"><span>Hugging Face</span></div>
+                            <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Hugging-Face.svg" alt="Hugging Face"><span>HF Logo</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/OpenCV.svg" alt="OpenCV"><span>OpenCV</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Pandas.svg" alt="Pandas"><span>Pandas</span></div>
                             <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/NumPy.svg" alt="NumPy"><span>NumPy</span></div>
