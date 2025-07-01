@@ -38,7 +38,7 @@ The course is separated into four main categories:
 This course discusses building AI programs with DSPy.
 
 <!-- Add images if needed -->
-<!-- ![Compound Systems](assets/images/compound%20systems.png) -->
+![Compound Systems](assets/images/compound%20systems.png)
 
 ## Introduction to DSPy
 
