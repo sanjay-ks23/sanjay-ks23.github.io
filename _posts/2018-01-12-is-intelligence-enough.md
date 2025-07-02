@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ML Summer School - ML Math Refresher"
+title:  "ML Summer School - Day 1"
 author: Sanjay
 categories: [Cohere]
 image: "![image](https://github.com/user-attachments/assets/f1be48d3-fbe1-4a35-ae9e-611b3492afb6)
@@ -31,4 +31,10 @@ For multiple variables, we use partial derivatives,
 We then moved to the Gradients section.
 ggardient is a colelction of partial derivaatives and the gradient is in itself a vector
 
-we then moved ot vectors
+we then moved to vectors
+and how to find distance between them using eiher euclidean or Cosine methodology.
+
+ANd then we finally solved for eigen values and eigen vectors.
+
+
+Now for the second seeiosn today : Introduction to embeddings and retreival I will talk about this seperately.
