@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DSPy: A Revolution in Prompt Engineering"
+title: "DPy: A Revolution in Prompt Engineering"
 author: Sanjay
 categories: [ AI Agents ]
 image: "assets/images/dspy.jpg"
