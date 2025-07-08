@@ -93,6 +93,6 @@ There are three main features:
 
 3. **Automatic program optimization**, such as weight fine-tuning.
 
-Each of these will be discussed separately and in detail in the upcoming modules.
+Each of these will be discussed separately and in detail in the upcoming modules
 
 ---
