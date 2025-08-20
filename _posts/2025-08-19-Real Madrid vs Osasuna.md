@@ -12,7 +12,7 @@ I want to do this for the whole season and depending on how it goes we will then
 For the first time, I have seen a player pick out Mbappe's run since last season started
 The buildup has changed a lot. we are a lot more composed no more hoofing up the ball from the defence.
 But it does feel like the team needs more matches together, still feels a bit clunky to defend llong balls
-Vini is passing the ball back does takeon anyone.
+Vini is passing the ball back does takeon anyone
 I feel ike the ball is bobbling a lot the pitch doesnt sem right.
 
 I know the team is parking the bus but the way we build doesnt feel natural feels like we are pushing a lot of stuff, which doesnt need to be done. We feel slow not upto match fitness which is expected for the first game of the season.
