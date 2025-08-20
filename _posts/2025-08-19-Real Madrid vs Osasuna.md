@@ -9,7 +9,7 @@ My live analysis of what I watched during the game today
 
 I want to do this for the whole season and depending on how it goes we will then decide. I am really excited for this season.
 
-For the first time, I have seen a player pick out Mbappe's run since last season started
+For the first time, I have seen a player pick out Mbappe's run since last season started.
 The buildup has changed a lot. we are a lot more composed no more hoofing up the ball from the defence.
 But it does feel like the team needs more matches together, still feels a bit clunky to defend llong balls
 Vini is passing the ball back does takeon anyone
