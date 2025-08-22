@@ -20,4 +20,4 @@ I know the team is parking the bus but the way we build doesnt feel natural feel
 One positive is Militao looks good, just as I was saying that brother took 2 mins to kick a ball. Still stupid while anticipating when the striker goes deep to get the ball, the same old stuff
 
 We need to stop this short corner and free-kick stuff, you can see that it is etched that Vini only pays with that everyone against us mentality.
-Mbappe and Huijsen have been the only sparks in this half. There is no wingplay; the wingers are too pedestrian
+Mbappe and Huijsen have been the only sparks in this half. There is no wingplay; the wingers are too pedestrian.
