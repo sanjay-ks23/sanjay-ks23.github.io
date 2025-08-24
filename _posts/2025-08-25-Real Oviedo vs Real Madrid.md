@@ -29,7 +29,9 @@ This section can be broken down into subsections for different tactical aspects 
 
 ### Offensive Setup
 
-**
+*Already looks better offensively due to Rodrygo tucking in when attacking to allow Carreras to move forward*
+
+Our defence is soooo high, we need to communicate better as well. Might work better against teams that sit deep, but we still need to understand positionings. Right as I was typing it Oviedo.... one single pass and they were
 
 **
 
@@ -39,7 +41,7 @@ This section can be broken down into subsections for different tactical aspects 
 
 ### Defensive Structure
 
-*It does feel like the team needs more matches together, still feels a bit clunky to defend llong balls.*
+*It does feel like the team needs more matches together; it still feels a bit clunky to defend long balls.*
 
 *One positive is Militao looks good, just as I was saying that brother took 2 mins to kick a ball. Still stupid while anticipating when the striker goes deep to get the ball, the same old stuff.*
 
