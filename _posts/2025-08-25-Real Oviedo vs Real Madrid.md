@@ -1,0 +1,73 @@
+
+
+layout: post
+title:  "Real Oviedo vs Real Madrid: Match Analysis"
+author: sanjay
+categories: [ Real Madrid ]
+image: assets/images/5.jpg
+---
+
+### How to Add Images
+To add images to your post, follow these steps:
+1.  Place your image file (e.g., `my-image.png`) in the `assets/images/` directory.
+2.  In this markdown file, use the following syntax to embed the image:
+    `![alt text for the image](/assets/images/my-image.png)`
+
+---
+
+## Match Summary
+
+A brief overview of the match, including the final score, key events (goals, red cards), and the general flow of the game.
+
+*My live analysis of what I watched during the game today. I want to do this for the whole season and depending on how it goes we will then decide. I am really excited for this season.*
+
+---
+
+## Tactical Analysis
+
+This section can be broken down into subsections for different tactical aspects of the game.
+
+### Offensive Setup
+
+*Already looks better offensively due to Rodrygo tucking in when attacking to allow Carreras to move forward*
+
+Our defence is soooo high, we need to communicate better as well. Might work better against teams that sit deep, but we still need to understand positionings. Right as I was typing it Oviedo.... one single pass and they were
+
+**
+
+**(You can add images here to illustrate formations or player movements. For example, a screenshot of the team's shape.)**
+
+`![Real Madrid's offensive shape](/assets/images/placeholder.jpg)`
+
+### Defensive Structure
+
+*It does feel like the team needs more matches together; it still feels a bit clunky to defend long balls.*
+
+*One positive is Militao looks good, just as I was saying that brother took 2 mins to kick a ball. Still stupid while anticipating when the striker goes deep to get the ball, the same old stuff.*
+
+**(Add any relevant statistics here, like tackles, interceptions, etc.)**
+
+---
+
+## Player Performances
+
+Comment on the individual performances of key players.
+
+*   **Vini Jr.:** *Vini is passing the ball back does takeon anyone. you can see that it is etched that Vini only pays with that everyone against us mentality.*
+*   **Mbappe:** *Mbappe and Huijsen have been the only sparks in this half.*
+*   **Huijsen:** *Mbappe and Huijsen have been the only sparks in this half.*
+
+---
+
+## Other Observations
+
+*I feel ike the ball is bobbling a lot the pitch doesnt sem right.*
+*We need to stop this short corner and free-kick stuff.*
+
+---
+
+## Conclusion
+
+Your final thoughts on the match. What were the main takeaways? What does this result mean for Real Madrid going forward?
+
+*(Your concluding remarks here.)*
