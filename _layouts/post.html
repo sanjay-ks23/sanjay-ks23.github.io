@@ -12,26 +12,14 @@ post_class: post-template
     <div class="row">
 
         <!-- Post -->
-        {% assign author = site.authors[page.author] | default: site.authors.sanjay %}
-
         <div class="col-md-12">
             <div class="mainheading">
 
                 <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
 
-                <!-- Author Box -->
-                <div class="row post-top-meta">
-                    <div class="col-xs-12 col-md-10 col-lg-10 text-md-left">
-                        {% if author.avatar %}
-                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
-                        {% else %}
-                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
-                        {% endif %}
-                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>
-                        <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>
-                    </div>
-                </div>
+                <!-- Post Date -->
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>
 
             </div>
 

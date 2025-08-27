@@ -1,203 +1,158 @@
 ---
-layout: page
+layout: about_new
 title: About
 permalink: /about
-comments: false
-show_explore: false
-show_sitetitle: false
 ---
 
-<style>
-    .about-page-container {
-        padding: 0;
-    }
-    .about-main-content {
-        padding: 3rem 2rem;
-    }
-    .about-main-content h1 {
-        font-family: 'Righteous', cursive;
-        font-size: 3.5rem;
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 0.5rem;
-    }
-    .about-main-content .designation {
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: #fff;
-        margin-bottom: 2rem;
-    }
-    .about-main-content .section-title {
-        font-size: 1.8rem;
-        font-weight: 600;
-        color: #005a5a;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-    .about-main-content ul {
-        list-style: none;
-        padding-left: 0;
-    }
-    .about-main-content ul li {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        color: #333;
-        margin-bottom: 1rem;
-        position: relative;
-        padding-left: 25px;
-        text-align: justify;
-    }
-    .about-main-content ul li:before {
-        content: '•';
-        color: #008080;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-        position: absolute;
-        left: 0;
-    }
+<header>
+  <h2 class="h2 article-title">About Me</h2>
+</header>
 
-    .about-sidebar {
-        position: sticky;
-        top: 80px;
-        padding: 3rem 2rem;
-    }
-    .about-sidebar h4 {
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: #005a5a;
-        margin-bottom: 1.5rem;
-    }
-    .contact-links a {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-        color: #333;
-        text-decoration: none;
-        font-weight: 500;
-        transition: all 0.3s ease;
-    }
-    .contact-links a:hover {
-        color: #008080;
-        transform: translateX(5px);
-    }
-    .contact-links a i {
-        color: #008080;
-        margin-right: 10px;
-        width: 20px;
-        text-align: center;
-    }
+<section class="about-text">
+  <p>
+    I am a passionate and results-driven Deep Learning Engineer with a strong foundation in developing and deploying AI/ML models. My experience spans from conducting research on state-of-the-art algorithms to engineering robust solutions for real-world challenges, including content moderation, wind energy forecasting, and industrial safety systems.
+  </p>
+  <p>
+    My goal is to leverage my skills in machine learning, computer vision, and data analysis to build innovative and impactful AI-powered applications. I am a firm believer in continuous learning and am always exploring new techniques and technologies to push the boundaries of what's possible.
+  </p>
+</section>
 
-    .tech-stack-sidebar {
-        margin-top: 3rem;
-    }
-    .tech-category-sidebar {
-        margin-bottom: 2.5rem;
-    }
-    .tech-category-sidebar h5 {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #005a5a;
-        margin-bottom: 1.5rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-    .tech-stack-grid-sidebar {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.75rem 1rem;
-    }
-    .tech-icon-sidebar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 0.6rem;
-        transition: transform 0.2s ease;
-    }
-    .tech-icon-sidebar:hover {
-        transform: scale(1.1);
-    }
-    .tech-icon-sidebar img {
-        height: 35px;
-        width: 35px;
-        object-fit: contain;
-    }
-    .tech-icon-sidebar span {
-        font-size: 0.75rem;
-        color: #7f8c8d;
-        font-weight: 500;
-    }
-</style>
+<!--
+  - service (What I'm Doing)
+-->
 
-<div class="row">
-    <!-- Main Content -->
-    <div class="col-lg-7 about-main-content">
-        <h1>Sanjay Kuppusamy Saravanan</h1>
-        <p class="designation">Deep Learning Engineer</p>
+<section class="service">
 
-        <h2 class="section-title">Experience</h2>
-        <ul>
-            <li><strong>AI/ML Engineer Intern at SlateMate, IIT Madras:</strong> Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework. Optimized AI models for on-device (edge) deployment, balancing performance, latency, and resource consumption to enable real-time analysis on mobile platforms.</li>
-            <li><strong>Machine Learning Intern at National Institute of Wind Energy:</strong> Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction, achieving a Mean Squared Error (MSE) of 0.040.</li>
-        </ul>
+  <h3 class="h3 service-title">What I'm Doing</h3>
 
-        <h2 class="section-title">Projects</h2>
-        <ul>
-            <li>Enhanced Mistral 7b with SFT, Alpaca, PEFT, and DPO for improved instruction following.</li>
-            <li>Developed an IoT solution for monitoring employees and preventing forklift accidents.</li>
-            <li>Created an Intersection Traffic Management System (ITMS) using CV and Yolov7.</li>
-            <li>Built an AI Malware Detection System with sandboxing and NLP to prevent malware attacks.</li>
-        </ul>
+  <ul class="service-list">
 
-        <h2 class="section-title">Publications & Certifications</h2>
-        <ul>
-            <li>First author of an IEEE publication on autonomous safety compliance in industrial environments.</li>
-            <li>Authored IEEE papers on securing patient health records with blockchain and a blockchain-enhanced patient triage system.</li>
-            <li>Certified as an IBM AI Analyst and Oracle Cloud GenAI Professional.</li>
-        </ul>
-    </div>
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="{{ site.baseurl }}/assets/images/icon-dev.svg" alt="Web development icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">AI/ML Engineering</h4>
+        <p class="service-item-text">
+          Building and optimizing state-of-the-art models for various applications.
+        </p>
+      </div>
+    </li>
 
-    <!-- Sidebar -->
-    <div class="col-lg-4 offset-lg-1">
-        <div class="about-sidebar">
-            <h4>Contact Me</h4>
-            <div class="contact-links">
-                <a href="https://linkedin.com/in/sanjayks2317" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
-                <a href="https://twitter.com/Sanj_AI_space" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-                <a href="https://github.com/sanjay-ks23" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-            </div>
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="{{ site.baseurl }}/assets/images/icon-design.svg" alt="design icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Edge Deployment</h4>
+        <p class="service-item-text">
+          Optimizing models for on-device deployment, balancing performance and resource consumption.
+        </p>
+      </div>
+    </li>
 
-            <div class="tech-stack-sidebar">
-                <h4>My Tech Stack</h4>
-                <div class="tech-category-sidebar">
-                    <h5>Core ML & Data</h5>
-                    <div class="tech-stack-grid-sidebar">
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Python.svg" alt="Python"><span>Python</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/PyTorch.svg" alt="PyTorch"><span>PyTorch</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/TensorFlow.svg" alt="TensorFlow"><span>TensorFlow</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Keras.svg" alt="Keras"><span>Keras</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/hf logo.svg" alt="Hugging Face"><span>Hugging Face</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/OpenCV.svg" alt="OpenCV"><span>OpenCV</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Pandas.svg" alt="Pandas"><span>Pandas</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/NumPy.svg" alt="NumPy"><span>NumPy</span></div>
-                    </div>
-                </div>
-                <div class="tech-category-sidebar">
-                    <h5>Development & Tools</h5>
-                    <div class="tech-stack-grid-sidebar">
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Git.svg" alt="Git"><span>Git</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/GitHub.svg" alt="GitHub"><span>GitHub</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Jupyter.svg" alt="Jupyter"><span>Jupyter</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Visual-Studio-Code-(VS-Code).svg" alt="VS Code"><span>VS Code</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Vim.svg" alt="Vim"><span>Vim</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Streamlit.svg" alt="Streamlit"><span>Streamlit</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Kaggle.svg" alt="Kaggle"><span>Kaggle</span></div>
-                        <div class="tech-icon-sidebar"><img src="{{ site.baseurl }}/assets/svg/Ubuntu.svg" alt="Ubuntu"><span>Ubuntu</span></div>
-                    </div>
-                </div>
-            </div>
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="{{ site.baseurl }}/assets/images/icon-app.svg" alt="mobile app icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">IoT & Computer Vision</h4>
+        <p class="service-item-text">
+          Developing intelligent systems for safety, monitoring, and automation.
+        </p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="{{ site.baseurl }}/assets/images/icon-photo.svg" alt="camera icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Research & Publication</h4>
+        <p class="service-item-text">
+          Contributing to the field with publications in IEEE on novel applications of technology.
+        </p>
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+<!--
+  - #RESUME content that will be dynamically moved by JS
+-->
+
+<div id="resume-content-source" style="display: none;">
+    <header>
+      <h2 class="h2 article-title">Resume</h2>
+    </header>
+
+    <section class="timeline">
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="book-outline"></ion-icon>
         </div>
-    </div>
+        <h3 class="h3">Experience</h3>
+      </div>
+      <ol class="timeline-list">
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">AI/ML Engineer Intern at SlateMate, IIT Madras</h4>
+          <span>[Date]</span>
+          <p class="timeline-text">
+            Conducted research on state-of-the-art AI/ML algorithms for content classification and contributed to a multi-layered content moderation framework. Optimized AI models for on-device (edge) deployment, balancing performance, latency, and resource consumption to enable real-time analysis on mobile platforms.
+          </p>
+        </li>
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">Machine Learning Intern at National Institute of Wind Energy</h4>
+          <span>[Date]</span>
+          <p class="timeline-text">
+            Collaborated on advanced wind energy forecasting initiatives and engineered a Temporal Fusion Transformer for multi-year AEP prediction, achieving a Mean Squared Error (MSE) of 0.040.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="timeline">
+        <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 classh3>Projects</h3>
+        </div>
+        <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Enhanced Mistral 7b</h4>
+                <p class="timeline-text">Enhanced Mistral 7b with SFT, Alpaca, PEFT, and DPO for improved instruction following.</p>
+            </li>
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">IoT Forklift Safety Solution</h4>
+                <p class="timeline-text">Developed an IoT solution for monitoring employees and preventing forklift accidents.</p>
+            </li>
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Intersection Traffic Management System (ITMS)</h4>
+                <p class="timeline-text">Created an ITMS using CV and Yolov7.</p>
+            </li>
+             <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">AI Malware Detection System</h4>
+                <p class="timeline-text">Built an AI Malware Detection System with sandboxing and NLP to prevent malware attacks.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section class="skill">
+      <h3 class="h3 skills-title">My Skills</h3>
+      <p class="timeline-text">My Tech stack is listed below</p>
+    </section>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const resumeContent = document.getElementById('resume-content-source');
+    const resumePage = document.querySelector('.resume[data-page="resume"]');
+    if (resumeContent && resumePage) {
+        resumePage.innerHTML = resumeContent.innerHTML;
+        resumeContent.remove();
+    }
+});
+</script>
