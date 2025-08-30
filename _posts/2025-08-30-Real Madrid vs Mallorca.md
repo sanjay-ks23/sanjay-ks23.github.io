@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Real Madrid vs Osasuna: A Deep Dive Tactical Analysis"
+title:  "Real Madrid vs Mallorca: A Deep Dive Tactical Analysis"
 author: sanjay
-categories: [ Real Madrid, Tactical Analysis ]
+categories: [ Real Madrid]
 image: assets/images/poster.png
 ---
 
