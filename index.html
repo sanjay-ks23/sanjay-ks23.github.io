@@ -13,15 +13,8 @@ title: Home
     </div>
     <div class="row">
 
-    {% for post in site.posts %}
-
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
+    {% assign post = site.posts.first %}
+    {% include featuredbox.html %}
 
     </div>
 </section>
