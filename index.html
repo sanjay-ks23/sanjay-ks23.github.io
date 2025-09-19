@@ -3,71 +3,22 @@ layout: default
 title: Home
 ---
 
-{% if page.url == "/" %}
-
-<!-- Begin Categories -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="categories-list">
-                <h5 class="font-weight-bold">Topics</h5>
-                <ul>
-                    {% assign categories = site.categories | sort %}
-                    {% for category in categories %}
-                        {% unless category[0] == "Tactical analysis" %}
-                            <li><a href="{{ site.baseurl }}/categories#{{ category[0] | slugify }}">{{ category[0] | replace: '-', ' ' | capitalize }}</a></li>
-                        {% endunless %}
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
+<div class="container section-container">
+    <h2 class="section-title">Recent Essays</h2>
+    <div class="post-grid">
+        {% for post in site.posts limit: 4 %}
+            {% include postbox.html %}
+        {% endfor %}
     </div>
 </div>
-<!-- End Categories -->
 
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
-    </div>
-    <div class="row">
+<hr class="section-divider">
 
-    {% assign post = site.posts.first %}
-    {% include featuredbox.html %}
-
-    </div>
-</section>
-
-{% endif %}
-
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-
-    <div class="section-title">
-
-        <h2><span>All Stories</span></h2>
-
-    </div>
-
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
+<div class="container section-container">
+    <h2 class="section-title">From the frontiers of AI</h2>
+    <div class="post-grid">
+        {% for post in site.categories['AI Agents'] limit: 4 %}
+            {% include postbox.html %}
         {% endfor %}
-
     </div>
-
-</section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
 </div>
