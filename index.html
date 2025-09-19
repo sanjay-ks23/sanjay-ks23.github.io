@@ -5,6 +5,26 @@ title: Home
 
 {% if page.url == "/" %}
 
+<!-- Begin Categories -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="categories-list">
+                <h5 class="font-weight-bold">Topics</h5>
+                <ul>
+                    {% assign categories = site.categories | sort %}
+                    {% for category in categories %}
+                        {% unless category[0] == "Tactical analysis" %}
+                            <li><a href="{{ site.baseurl }}/categories#{{ category[0] | slugify }}">{{ category[0] | replace: '-', ' ' | capitalize }}</a></li>
+                        {% endunless %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Categories -->
+
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
@@ -51,4 +71,3 @@ title: Home
     {% include pagination.html %}
 </span>
 </div>
-

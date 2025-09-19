@@ -3,25 +3,80 @@
 # Change this file for any custom CSS.
 ---
 
-/* We need to add display:inline in order to align the '>>' of the 'read more' link */
-.post-excerpt p {
-	display:inline;
-}
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"syntax",
     "starsnonscss"
 ;
 
+body {
+    background-color: #f0f2f5; /* A light gray background */
+}
+
 .card {
-    border-radius: 15px;
+    border-radius: 25px !important; /* Increased curvature */
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px); /* Increased blur */
+    -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden; /* To make sure the image corners are also rounded */
+}
+
+.card-body, .card-text {
+    text-align: justify;
 }
 
 .card-footer {
     background-color: transparent !important;
+}
+
+.featured-posts .card {
+    min-height: 450px; /* Increased height for featured post */
+}
+
+.recent-posts .card {
+    min-height: 350px; /* Normal height for recent posts */
+}
+
+.card img {
+    border-radius: 25px !important; /* Match card curvature */
+}
+
+.categories-list {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+}
+
+.categories-list h5 {
+    margin-bottom: 1rem;
+}
+
+.categories-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories-list li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.categories-list a {
+    color: #333;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.categories-list a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
 }

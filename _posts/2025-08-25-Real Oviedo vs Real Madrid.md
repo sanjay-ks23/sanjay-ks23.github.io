@@ -3,7 +3,7 @@ layout: post
 title:  "Real Oviedo vs Real Madrid: A Deep Dive Tactical Analysis"
 author: sanjay
 categories: [ Real Madrid]
-image: assets/images/poster.png
+image: "assets/images/3.jpg"
 ---
 
 This post serves as a comprehensive template for in-depth tactical analysis. Use this structure to break down a match systematically.
