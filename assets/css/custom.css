@@ -77,14 +77,21 @@ body, input, textarea, select, button {
     display: none !important;
 }
 
+/* Compact Container - Apple Newsroom Style */
+.container {
+    max-width: 980px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+}
+
 /* Apple-style Section Headings */
 .section-title h2 {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.125;
     font-weight: 700;
     letter-spacing: .004em;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     color: var(--sk-headline-text-color);
 }
 
@@ -93,7 +100,11 @@ body, input, textarea, select, button {
     padding-bottom: 0 !important;
 }
 
-/* Featured post styling - unified hover animation, no borders, reduced height */
+/* Featured post styling - compact and centered */
+.featured-posts {
+    margin-bottom: 40px;
+}
+
 .listfeaturedtag {
     border-radius: 12px !important;
     border: none !important;
@@ -101,13 +112,13 @@ body, input, textarea, select, button {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     overflow: hidden !important;
     background: var(--sk-card-background) !important;
-    height: auto !important;
-    min-height: 300px !important;
+    height: 240px !important;
+    max-width: 100% !important;
 }
 
 .listfeaturedtag:hover {
-    transform: translateY(-4px) !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
 }
 
 .listfeaturedtag .thumbnail {
@@ -115,48 +126,76 @@ body, input, textarea, select, button {
 }
 
 .listfeaturedtag .wrapthumbnail {
-    height: 300px !important;
+    height: 240px !important;
 }
 
-/* Featured post content styling */
+/* Featured post content styling - compact */
 .listfeaturedtag .card-title {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-weight: 700 !important;
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
     color: var(--sk-headline-text-color);
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.8rem !important;
+    line-height: 1.3 !important;
 }
 
 .listfeaturedtag .card-text {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-weight: 400 !important;
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     color: var(--sk-text-secondary);
-    line-height: 1.5 !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.5rem !important;
 }
 
-/* Regular post cards - vertical layout, no borders, more rounded, square-ish */
+.listfeaturedtag .card-body {
+    padding: 1.2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+}
+
+.listfeaturedtag .card-footer {
+    padding: 0.5rem 1.2rem !important;
+    margin-top: auto !important;
+}
+
+/* All Stories Grid - Compact and Square */
+.recent-posts {
+    margin-bottom: 40px;
+}
+
+.listrecent {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    margin: 0 !important;
+}
+
+/* Regular post cards - Square design */
 .modern-card {
-    border-radius: 20px !important;
+    border-radius: 12px !important;
     border: none !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     overflow: hidden !important;
     background: var(--sk-card-background) !important;
-    height: 320px !important;
+    height: 280px !important;
+    width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
+    margin-bottom: 0 !important;
 }
 
 .modern-card:hover {
-    transform: translateY(-4px) !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
 }
 
 .modern-card .card-image {
-    height: 180px;
+    height: 140px;
     overflow: hidden;
-    border-radius: 20px 20px 0 0;
+    border-radius: 12px 12px 0 0;
     flex-shrink: 0;
 }
 
@@ -172,7 +211,7 @@ body, input, textarea, select, button {
 }
 
 .modern-card .card-body {
-    padding: 1.2rem;
+    padding: 1rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -181,16 +220,16 @@ body, input, textarea, select, button {
 
 .modern-card .card-title {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     font-weight: 700 !important;
     line-height: 1.3 !important;
-    margin-bottom: 0.8rem !important;
+    margin-bottom: 0.6rem !important;
     color: var(--sk-headline-text-color) !important;
 }
 
 .modern-card .card-text {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 0.9rem !important;
+    font-size: 0.85rem !important;
     font-weight: 400 !important;
     line-height: 1.4 !important;
     color: var(--sk-text-secondary) !important;
@@ -199,10 +238,25 @@ body, input, textarea, select, button {
 }
 
 .modern-card .card-footer {
-    padding: 0.8rem 1.2rem;
+    padding: 0.6rem 1rem;
     background: transparent !important;
     border-top: none !important;
     margin-top: auto;
+}
+
+.modern-card .post-date {
+    font-size: 0.8rem !important;
+    color: var(--sk-text-tertiary) !important;
+}
+
+/* Remove Bootstrap column classes for grid */
+.listrecent .col-lg-4,
+.listrecent .col-md-6,
+.listrecent .mb-30px,
+.listrecent .card-group {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* Justified text for descriptions */
@@ -340,6 +394,32 @@ body, input, textarea, select, button {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .container {
+        max-width: 100% !important;
+        padding: 0 15px !important;
+    }
+    
+    .listrecent {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+    
+    .modern-card {
+        height: 260px !important;
+    }
+    
+    .modern-card .card-image {
+        height: 120px !important;
+    }
+    
+    .listfeaturedtag {
+        height: 200px !important;
+    }
+    
+    .listfeaturedtag .wrapthumbnail {
+        height: 200px !important;
+    }
+    
     .custom-footer .footer-title {
         font-size: 1.8rem !important;
     }
@@ -347,14 +427,6 @@ body, input, textarea, select, button {
     .custom-footer .col-md-6 {
         padding: 0 1rem;
         margin-bottom: 2rem;
-    }
-    
-    .modern-card {
-        height: 300px !important;
-    }
-    
-    .modern-card .card-image {
-        height: 160px !important;
     }
     
     .top-nav-bar {
