@@ -13,7 +13,8 @@ title: Home
     </div>
     <div class="row">
 
-    {% assign post = site.posts.first %}
+    {% assign featured_post = site.posts | sort: 'date' | reverse | first %}
+    {% assign post = featured_post %}
     {% include featuredbox.html %}
 
     </div>

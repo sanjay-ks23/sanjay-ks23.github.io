@@ -9,7 +9,7 @@
     --sk-body-text-color: rgb(29, 29, 31);
     --sk-headline-text-color: rgb(29, 29, 31);
     --sk-footer-background: rgb(245, 245, 247);
-    --sk-card-background: rgb(255, 255, 255);
+    --sk-card-background: rgb(250, 250, 252);
     --sk-border-color: rgb(232, 232, 237);
     --sk-text-secondary: rgb(110, 110, 115);
     --sk-text-tertiary: rgb(134, 134, 139);
@@ -30,10 +30,10 @@ body, input, textarea, select, button {
     color: var(--sk-body-text-color);
 }
 
-/* Top Navigation Bar with Logo */
+/* Top Navigation Bar with Logo - Reduced Size */
 .top-nav-bar {
     background-color: var(--sk-footer-background);
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     border-bottom: 1px solid var(--sk-border-color);
     position: fixed;
     top: 0;
@@ -42,8 +42,8 @@ body, input, textarea, select, button {
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 2rem;
+    justify-content: center;
+    height: 50px;
 }
 
 .logo-container {
@@ -52,13 +52,13 @@ body, input, textarea, select, button {
 }
 
 .logo-container img {
-    height: 24px;
+    height: 20px;
     width: auto;
 }
 
-/* Adjust site content padding for fixed nav */
+/* Adjust site content padding for smaller fixed nav */
 .site-content {
-    margin-top: 80px !important;
+    margin-top: 60px !important;
     padding-top: 2rem !important;
 }
 
@@ -93,11 +93,11 @@ body, input, textarea, select, button {
     padding-bottom: 0 !important;
 }
 
-/* Modern card styling with Apple aesthetics */
+/* Modern card styling with Apple aesthetics - No borders */
 .card {
     border-radius: 12px !important;
-    border: 1px solid var(--sk-border-color) !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     overflow: hidden !important;
     background: var(--sk-card-background) !important;
@@ -108,11 +108,11 @@ body, input, textarea, select, button {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Featured post styling - unified hover animation */
+/* Featured post styling - unified hover animation, no borders */
 .listfeaturedtag {
     border-radius: 12px !important;
-    border: 1px solid var(--sk-border-color) !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     overflow: hidden !important;
     background: var(--sk-card-background) !important;
@@ -127,7 +127,7 @@ body, input, textarea, select, button {
     border-radius: 0 !important;
 }
 
-/* Regular post cards - vertical layout */
+/* Regular post cards - vertical layout, no borders */
 .modern-card .card-image {
     height: 200px;
     overflow: hidden;
@@ -172,7 +172,7 @@ body, input, textarea, select, button {
     text-justify: inter-word !important;
 }
 
-/* Apple-style Footer */
+/* Apple-style Footer - Centered and Aligned */
 .custom-footer {
     background: var(--sk-footer-background) !important;
     color: var(--sk-body-text-color) !important;
@@ -181,34 +181,59 @@ body, input, textarea, select, button {
     border-top: 1px solid var(--sk-border-color) !important;
 }
 
+.custom-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.custom-footer .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-footer .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.custom-footer .footer-content,
+.custom-footer .footer-links {
+    width: 100%;
+    max-width: 400px;
+}
+
 .custom-footer .footer-title {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     font-weight: 700 !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.8rem !important;
     color: var(--sk-headline-text-color) !important;
 }
 
 .custom-footer .footer-description {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 1.1rem !important;
-    line-height: 1.6 !important;
-    margin-bottom: 2rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1.5rem !important;
     color: var(--sk-text-secondary) !important;
 }
 
 .custom-footer .ask-away h4 {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 1.3rem !important;
+    font-size: 1.1rem !important;
     font-weight: 600 !important;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.4rem !important;
     color: var(--sk-headline-text-color) !important;
 }
 
 .custom-footer .ask-away p {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 1rem !important;
-    margin-bottom: 1rem !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 0.8rem !important;
     color: var(--sk-text-secondary) !important;
 }
 
@@ -216,13 +241,14 @@ body, input, textarea, select, button {
     display: inline-block !important;
     background: var(--sk-body-text-color) !important;
     color: var(--sk-body-background-color) !important;
-    padding: 0.75rem 1.5rem !important;
+    padding: 0.6rem 1.2rem !important;
     border-radius: 8px !important;
     text-decoration: none !important;
     font-weight: 500 !important;
     transition: all 0.3s ease !important;
     border: none !important;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 0.9rem !important;
 }
 
 .custom-footer .contact-link:hover {
@@ -234,49 +260,51 @@ body, input, textarea, select, button {
 
 .custom-footer .footer-links h4 {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 1.3rem !important;
+    font-size: 1.1rem !important;
     font-weight: 600 !important;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.2rem !important;
     color: var(--sk-headline-text-color) !important;
 }
 
 .custom-footer .social-links {
     display: flex !important;
     flex-direction: column !important;
-    gap: 1rem !important;
+    gap: 0.8rem !important;
 }
 
 .custom-footer .social-link {
     display: flex !important;
     align-items: center !important;
+    justify-content: center !important;
     color: var(--sk-text-secondary) !important;
     text-decoration: none !important;
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     transition: all 0.3s ease !important;
-    padding: 0.5rem 0 !important;
+    padding: 0.4rem 0 !important;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .custom-footer .social-link:hover {
     color: var(--sk-body-text-color) !important;
-    transform: translateX(5px) !important;
+    transform: translateX(3px) !important;
     text-decoration: none !important;
 }
 
 .custom-footer .social-link i {
-    margin-right: 0.75rem !important;
-    font-size: 1.2rem !important;
-    width: 20px !important;
+    margin-right: 0.6rem !important;
+    font-size: 1rem !important;
+    width: 16px !important;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .custom-footer .footer-title {
-        font-size: 2rem !important;
+        font-size: 1.8rem !important;
     }
     
-    .custom-footer .social-links {
-        margin-top: 2rem !important;
+    .custom-footer .col-md-6 {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
     }
     
     .modern-card .card-image {
@@ -284,7 +312,16 @@ body, input, textarea, select, button {
     }
     
     .top-nav-bar {
-        padding-left: 1rem;
+        padding: 0.4rem 0;
+        height: 45px;
+    }
+    
+    .logo-container img {
+        height: 18px;
+    }
+    
+    .site-content {
+        margin-top: 55px !important;
     }
 }
 
