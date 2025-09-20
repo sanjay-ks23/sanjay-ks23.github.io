@@ -16,6 +16,8 @@
 
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
+<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
+
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
 </head>
@@ -34,63 +36,11 @@ ga('send', 'pageview');
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
-	<!-- defer loading of font and font awesome -->
-	<noscript id="deferred-styles">
-		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	</noscript>
-
-
-<!-- Begin Menu Navigation
-================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
-
-    <div class="container pr-0">
-
-    <!-- Begin Logo -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-    </a>
-    <!-- End Logo -->
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarMediumish">
-
-        <!-- Begin Menu -->
-
-            <ul class="navbar-nav ml-auto">
-
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://github.com/sanjay-ks23/sanjay-ks23.github.io"><i class="fab fa-github"></i> Fork on Github</a>
-                </li>
-
-                {% include search-lunr.html %}
-
-            </ul>
-
-        <!-- End Menu -->
-
-    </div>
-
-    </div>
-</nav>
-<!-- End Navigation
-================================================== -->
+<!-- defer loading of font and font awesome -->
+<noscript id="deferred-styles">
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</noscript>
 
 <div class="site-content">
 
@@ -100,38 +50,45 @@ ga('send', 'pageview');
 <div class="container">
 {% endif %}
 
-<!-- Site Title
-================================================== -->
-{% if page.layout != 'post' and page.show_sitetitle != false %}
-<div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
-    <p class="lead">
-        {{ site.description }}
-    </p>
-</div>
-{% endif %}
-
 <!-- Content
 ================================================== -->
 <div class="main-content">
     {{ content }}
 </div>
 
-
-
-
 </div>
 
 <!-- Begin Footer
 ================================================== -->
-<footer class="footer">
+<footer class="custom-footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+            <div class="col-md-6">
+                <div class="footer-content">
+                    <h2 class="footer-title">{{ site.name }}</h2>
+                    <p class="footer-description">{{ site.description }}</p>
+                    <div class="ask-away">
+                        <h4>Ask Away</h4>
+                        <p>Have questions or want to collaborate? I'd love to hear from you!</p>
+                        <a href="mailto:{{ site.authors.sanjay.email }}" class="contact-link">Get in touch</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
+            <div class="col-md-6">
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="{{ site.authors.sanjay.twitter }}" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://github.com/sanjay-ks23" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="{{ site.baseurl }}/about" class="social-link">
+                            <i class="fas fa-user"></i> About Me
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
