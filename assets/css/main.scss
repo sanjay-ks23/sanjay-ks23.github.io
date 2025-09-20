@@ -25,3 +25,18 @@
 .card-footer {
     background-color: transparent !important;
 }
+// Add or modify these CSS rules
+.modern-card {
+    border-radius: 15px !important;  // Increased border radius
+    transition: transform 0.3s ease;
+    border: none;  // Remove border to eliminate lines
+    margin-bottom: 2rem;
+}
+
+.card-footer {
+    border-top: none !important;  // Remove the line between card body and footer
+}
+
+.post-date {
+    font-weight: bold;  // Make dates bold
+}
