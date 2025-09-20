@@ -34,7 +34,10 @@ title: Home
 
     <div class="row listrecent">
 
-        {% for post in paginator.posts %}
+        {% assign featured_post = site.posts | sort: 'date' | reverse | first %}
+        {% assign remaining_posts = site.posts | where_exp: "post", "post.date != featured_post.date" | sort: 'date' | reverse %}
+        
+        {% for post in remaining_posts limit: paginator.per_page %}
 
         {% include postbox.html %}
 

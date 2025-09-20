@@ -93,22 +93,7 @@ body, input, textarea, select, button {
     padding-bottom: 0 !important;
 }
 
-/* Modern card styling with Apple aesthetics - No borders */
-.card {
-    border-radius: 12px !important;
-    border: none !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    overflow: hidden !important;
-    background: var(--sk-card-background) !important;
-}
-
-.card:hover {
-    transform: translateY(-4px) !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* Featured post styling - unified hover animation, no borders */
+/* Featured post styling - unified hover animation, no borders, reduced height */
 .listfeaturedtag {
     border-radius: 12px !important;
     border: none !important;
@@ -116,6 +101,8 @@ body, input, textarea, select, button {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     overflow: hidden !important;
     background: var(--sk-card-background) !important;
+    height: auto !important;
+    min-height: 300px !important;
 }
 
 .listfeaturedtag:hover {
@@ -127,11 +114,50 @@ body, input, textarea, select, button {
     border-radius: 0 !important;
 }
 
-/* Regular post cards - vertical layout, no borders */
+.listfeaturedtag .wrapthumbnail {
+    height: 300px !important;
+}
+
+/* Featured post content styling */
+.listfeaturedtag .card-title {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 700 !important;
+    font-size: 1.4rem !important;
+    color: var(--sk-headline-text-color);
+    margin-bottom: 1rem !important;
+}
+
+.listfeaturedtag .card-text {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    color: var(--sk-text-secondary);
+    line-height: 1.5 !important;
+}
+
+/* Regular post cards - vertical layout, no borders, more rounded, square-ish */
+.modern-card {
+    border-radius: 20px !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    overflow: hidden !important;
+    background: var(--sk-card-background) !important;
+    height: 320px !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.modern-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
 .modern-card .card-image {
-    height: 200px;
+    height: 180px;
     overflow: hidden;
-    border-radius: 12px 12px 0 0;
+    border-radius: 20px 20px 0 0;
+    flex-shrink: 0;
 }
 
 .modern-card .card-image img {
@@ -146,24 +172,37 @@ body, input, textarea, select, button {
 }
 
 .modern-card .card-body {
-    padding: 1.5rem;
+    padding: 1.2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .modern-card .card-title {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 1.2rem !important;
-    font-weight: 600 !important;
-    line-height: 1.4 !important;
-    margin-bottom: 1rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0.8rem !important;
     color: var(--sk-headline-text-color) !important;
 }
 
 .modern-card .card-text {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 0.95rem !important;
-    line-height: 1.6 !important;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
     color: var(--sk-text-secondary) !important;
     margin-bottom: 0 !important;
+    flex-grow: 1;
+}
+
+.modern-card .card-footer {
+    padding: 0.8rem 1.2rem;
+    background: transparent !important;
+    border-top: none !important;
+    margin-top: auto;
 }
 
 /* Justified text for descriptions */
@@ -203,7 +242,7 @@ body, input, textarea, select, button {
 .custom-footer .footer-content,
 .custom-footer .footer-links {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .custom-footer .footer-title {
@@ -220,6 +259,8 @@ body, input, textarea, select, button {
     line-height: 1.5 !important;
     margin-bottom: 1.5rem !important;
     color: var(--sk-text-secondary) !important;
+    font-style: italic !important;
+    white-space: nowrap !important;
 }
 
 .custom-footer .ask-away h4 {
@@ -235,6 +276,7 @@ body, input, textarea, select, button {
     font-size: 0.9rem !important;
     margin-bottom: 0.8rem !important;
     color: var(--sk-text-secondary) !important;
+    white-space: nowrap !important;
 }
 
 .custom-footer .contact-link {
@@ -307,8 +349,12 @@ body, input, textarea, select, button {
         margin-bottom: 2rem;
     }
     
+    .modern-card {
+        height: 300px !important;
+    }
+    
     .modern-card .card-image {
-        height: 180px !important;
+        height: 160px !important;
     }
     
     .top-nav-bar {
@@ -322,6 +368,11 @@ body, input, textarea, select, button {
     
     .site-content {
         margin-top: 55px !important;
+    }
+    
+    .custom-footer .footer-description,
+    .custom-footer .ask-away p {
+        white-space: normal !important;
     }
 }
 
@@ -340,16 +391,4 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-weight: 600;
     color: var(--sk-headline-text-color);
-}
-
-/* Featured post title and text styling */
-.listfeaturedtag .card-title {
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-weight: 600;
-    color: var(--sk-headline-text-color);
-}
-
-.listfeaturedtag .card-text {
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    color: var(--sk-text-secondary);
 }
