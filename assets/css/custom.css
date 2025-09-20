@@ -1,14 +1,70 @@
-/* Custom Modern Styling for Jekyll Blog */
+/* Custom Modern Styling for Jekyll Blog - Apple Newsroom Inspired */
 
-/* Remove navigation bar */
-.mediumnavigation {
-    display: none !important;
+/* Import Apple Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Apple-style CSS Variables */
+:root {
+    --sk-body-background-color: rgb(255, 255, 255);
+    --sk-body-text-color: rgb(29, 29, 31);
+    --sk-headline-text-color: rgb(29, 29, 31);
+    --sk-footer-background: rgb(245, 245, 247);
+    --sk-card-background: rgb(255, 255, 255);
+    --sk-border-color: rgb(232, 232, 237);
+    --sk-text-secondary: rgb(110, 110, 115);
+    --sk-text-tertiary: rgb(134, 134, 139);
 }
 
-/* Adjust site content padding since nav is removed */
+/* Apple Font Stack */
+body, input, textarea, select, button {
+    font-synthesis: none;
+    -moz-font-feature-settings: "kern";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 1.4705882353;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    background-color: var(--sk-body-background-color);
+    color: var(--sk-body-text-color);
+}
+
+/* Top Navigation Bar with Logo */
+.top-nav-bar {
+    background-color: var(--sk-footer-background);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--sk-border-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 24px;
+    width: auto;
+}
+
+/* Adjust site content padding for fixed nav */
 .site-content {
-    margin-top: 0 !important;
+    margin-top: 80px !important;
     padding-top: 2rem !important;
+}
+
+/* Remove original navigation */
+.mediumnavigation {
+    display: none !important;
 }
 
 /* Hide site title and description */
@@ -21,33 +77,50 @@
     display: none !important;
 }
 
-/* Modern card styling with rounded corners and hover effects */
+/* Apple-style Section Headings */
+.section-title h2 {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 700;
+    letter-spacing: .004em;
+    margin-bottom: 24px;
+    color: var(--sk-headline-text-color);
+}
+
+.section-title span {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+/* Modern card styling with Apple aesthetics */
 .card {
-    border-radius: 20px !important;
-    border: none !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 12px !important;
+    border: 1px solid var(--sk-border-color) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     overflow: hidden !important;
-    background: #ffffff !important;
+    background: var(--sk-card-background) !important;
 }
 
 .card:hover {
-    transform: translateY(-8px) !important;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Featured post styling */
+/* Featured post styling - unified hover animation */
 .listfeaturedtag {
-    border-radius: 20px !important;
-    border: none !important;
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 12px !important;
+    border: 1px solid var(--sk-border-color) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     overflow: hidden !important;
+    background: var(--sk-card-background) !important;
 }
 
 .listfeaturedtag:hover {
-    transform: translateY(-5px) !important;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
 }
 
 .listfeaturedtag .thumbnail {
@@ -58,7 +131,7 @@
 .modern-card .card-image {
     height: 200px;
     overflow: hidden;
-    border-radius: 20px 20px 0 0;
+    border-radius: 12px 12px 0 0;
 }
 
 .modern-card .card-image img {
@@ -69,7 +142,7 @@
 }
 
 .modern-card:hover .card-image img {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .modern-card .card-body {
@@ -77,16 +150,19 @@
 }
 
 .modern-card .card-title {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 1.2rem !important;
     font-weight: 600 !important;
     line-height: 1.4 !important;
     margin-bottom: 1rem !important;
+    color: var(--sk-headline-text-color) !important;
 }
 
 .modern-card .card-text {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 0.95rem !important;
     line-height: 1.6 !important;
-    color: #666 !important;
+    color: var(--sk-text-secondary) !important;
     margin-bottom: 0 !important;
 }
 
@@ -96,67 +172,72 @@
     text-justify: inter-word !important;
 }
 
-/* Custom Footer Styling */
+/* Apple-style Footer */
 .custom-footer {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    color: white !important;
+    background: var(--sk-footer-background) !important;
+    color: var(--sk-body-text-color) !important;
     padding: 3rem 0 !important;
     margin-top: 4rem !important;
-    border-top: none !important;
+    border-top: 1px solid var(--sk-border-color) !important;
 }
 
 .custom-footer .footer-title {
-    font-family: 'Righteous', cursive !important;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 2.5rem !important;
     font-weight: 700 !important;
     margin-bottom: 1rem !important;
-    color: white !important;
+    color: var(--sk-headline-text-color) !important;
 }
 
 .custom-footer .footer-description {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 1.1rem !important;
     line-height: 1.6 !important;
     margin-bottom: 2rem !important;
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: var(--sk-text-secondary) !important;
 }
 
 .custom-footer .ask-away h4 {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 1.3rem !important;
     font-weight: 600 !important;
     margin-bottom: 0.5rem !important;
-    color: white !important;
+    color: var(--sk-headline-text-color) !important;
 }
 
 .custom-footer .ask-away p {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 1rem !important;
     margin-bottom: 1rem !important;
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: var(--sk-text-secondary) !important;
 }
 
 .custom-footer .contact-link {
     display: inline-block !important;
-    background: rgba(255, 255, 255, 0.2) !important;
-    color: white !important;
+    background: var(--sk-body-text-color) !important;
+    color: var(--sk-body-background-color) !important;
     padding: 0.75rem 1.5rem !important;
-    border-radius: 25px !important;
+    border-radius: 8px !important;
     text-decoration: none !important;
     font-weight: 500 !important;
     transition: all 0.3s ease !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    border: none !important;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .custom-footer .contact-link:hover {
-    background: rgba(255, 255, 255, 0.3) !important;
-    transform: translateY(-2px) !important;
-    color: white !important;
+    background: var(--sk-text-secondary) !important;
+    transform: translateY(-1px) !important;
+    color: var(--sk-body-background-color) !important;
     text-decoration: none !important;
 }
 
 .custom-footer .footer-links h4 {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 1.3rem !important;
     font-weight: 600 !important;
     margin-bottom: 1.5rem !important;
-    color: white !important;
+    color: var(--sk-headline-text-color) !important;
 }
 
 .custom-footer .social-links {
@@ -168,15 +249,16 @@
 .custom-footer .social-link {
     display: flex !important;
     align-items: center !important;
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: var(--sk-text-secondary) !important;
     text-decoration: none !important;
     font-size: 1rem !important;
     transition: all 0.3s ease !important;
     padding: 0.5rem 0 !important;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .custom-footer .social-link:hover {
-    color: white !important;
+    color: var(--sk-body-text-color) !important;
     transform: translateX(5px) !important;
     text-decoration: none !important;
 }
@@ -185,19 +267,6 @@
     margin-right: 0.75rem !important;
     font-size: 1.2rem !important;
     width: 20px !important;
-}
-
-/* Section titles */
-.section-title h2 {
-    font-size: 2rem !important;
-    font-weight: 700 !important;
-    margin-bottom: 2rem !important;
-    color: #333 !important;
-}
-
-.section-title span {
-    border-bottom: 3px solid #667eea !important;
-    padding-bottom: 0.5rem !important;
 }
 
 /* Responsive adjustments */
@@ -213,6 +282,10 @@
     .modern-card .card-image {
         height: 180px !important;
     }
+    
+    .top-nav-bar {
+        padding-left: 1rem;
+    }
 }
 
 /* Smooth scrolling */
@@ -223,4 +296,23 @@ html {
 /* Remove default footer */
 .footer {
     display: none !important;
+}
+
+/* Apple-style typography for all headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
+    color: var(--sk-headline-text-color);
+}
+
+/* Featured post title and text styling */
+.listfeaturedtag .card-title {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
+    color: var(--sk-headline-text-color);
+}
+
+.listfeaturedtag .card-text {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: var(--sk-text-secondary);
 }

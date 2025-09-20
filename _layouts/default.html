@@ -42,6 +42,15 @@ ga('send', 'pageview');
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </noscript>
 
+<!-- Top Navigation Bar with Logo -->
+<nav class="top-nav-bar">
+    <div class="logo-container">
+        <a href="{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+        </a>
+    </div>
+</nav>
+
 <div class="site-content">
 
 {% if page.permalink == '/about/' %}
