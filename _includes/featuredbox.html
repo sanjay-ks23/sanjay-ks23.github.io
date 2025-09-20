@@ -23,6 +23,8 @@
                             <h2 class="card-title">
                                 <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                             </h2>
+
+                            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:25 }}</h4>
                         </div>
                         <div class="card-footer b-0 bg-white mt-auto">
                             <div class="wrapfooter">
