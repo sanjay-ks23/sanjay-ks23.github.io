@@ -876,3 +876,47 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+
+/* Custom styling for post boxes and layout improvements */
+
+/* Increase border radius for post boxes */
+.card {
+    border-radius: 20px !important;
+}
+
+.listfeaturedtag {
+    border-radius: 20px !important;
+}
+
+/* Remove description text from post boxes */
+.listfeaturedtag h4.card-text,
+.listrecent h4.card-text {
+    display: none !important;
+}
+
+/* Make post dates bold */
+.post-date {
+    font-weight: 700 !important;
+}
+
+/* Remove the white line/pagination section before footer */
+.bottompagination {
+    display: none !important;
+}
+
+/* Ensure smooth transition to footer */
+.recent-posts {
+    margin-bottom: 0 !important;
+}
+
+/* Additional styling for better appearance */
+.listfeaturedtag .thumbnail {
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+/* Ensure featured post has proper border radius */
+.listfeaturedtag .card {
+    border-radius: 0 20px 20px 0 !important;
+}
