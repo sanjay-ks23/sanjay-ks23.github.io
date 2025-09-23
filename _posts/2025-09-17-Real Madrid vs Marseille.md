@@ -3,7 +3,7 @@ layout: post
 title:  "Real Madrid vs Marseille: A Deep Dive Tactical Analysis"
 author: sanjay
 categories: [ Real Madrid ]
-image: assets/images/posts/Real Madrid/Osasuna_home.jpg
+image: assets/images/posts/Real Madrid/Levante Away.png
 ---
 Marseille Home
 
