@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 .featured-posts .listfeaturedtag {
     display: flex;
     width: 100%;
-    min-height: 350px; /* Set a minimum height for the card */
+    min-height: 275px; /* Set a minimum height for the card */
 }
 
 .featured-posts .wrapthumbnail {
