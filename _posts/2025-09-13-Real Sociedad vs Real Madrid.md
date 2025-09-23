@@ -3,7 +3,7 @@ layout: post
 title:  "Real Sociedad vs Real Madrid: A Deep Dive Tactical Analysis"
 author: sanjay
 categories: [ Real Madrid ]
-image: assets/images/posts/Real Madrid/Levante away.png
+image: assets/images/posts/Real Madrid/Levante Away.png
 ---
 Soceidad away.
 
