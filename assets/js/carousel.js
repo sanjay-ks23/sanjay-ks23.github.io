@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        const scrollAmount = 300; // Amount to scroll on each click
+        const scrollAmount = 336; // Amount to scroll on each click
 
         const updateArrowState = () => {
             // Check if at the beginning
