@@ -358,3 +358,21 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     max-width: 1024px !important;
 }
+
+
+/* Featured Post Box Consistency */
+.featured-posts .listfeaturedtag {
+    min-height: 400px;
+    display: flex;
+    width: 100%;
+}
+
+.featured-posts .wrapthumbnail,
+.featured-posts .featured-box-img-cover {
+    height: 100%;
+}
+
+.featured-posts .featured-box-img-cover {
+    object-fit: cover;
+    width: 100%;
+}
