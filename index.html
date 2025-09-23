@@ -3,59 +3,33 @@ layout: default
 title: Home
 ---
 
-{% if page.url == "/" %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/carousel.css">
 
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
-    </div>
-    <div class="row">
+{% for category in site.categories %}
+  <section class="category-row">
 
-    {% for post in site.posts %}
+    <h2 class="category-title">{{ category[0] | capitalize }}</h2>
 
-        {% if post.featured == true %}
+    <div class="carousel-wrapper">
+      <button class="arrow prev-arrow">‹</button>
 
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-
-    </div>
-</section>
-
-{% endif %}
-
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-
-    <div class="section-title">
-
-        <h2><span>All Stories</span></h2>
-
-    </div>
-
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
+      <div class="posts-carousel">
+        {% for post in category[1] %}
+          <div class="post-card">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              {% if post.image %}
+                <img src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
+              {% endif %}
+              <h3>{{ post.title }}</h3>
+            </a>
+          </div>
         {% endfor %}
+      </div>
 
+      <button class="arrow next-arrow">›</button>
     </div>
 
-</section>
+  </section>
+{% endfor %}
 
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-
+<script src="{{ site.baseurl }}/assets/js/carousel.js"></script>
