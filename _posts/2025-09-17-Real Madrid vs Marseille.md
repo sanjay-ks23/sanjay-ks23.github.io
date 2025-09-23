@@ -1,4 +1,10 @@
-
+---
+layout: post
+title:  "Real Madrid vs Marseille: A Deep Dive Tactical Analysis"
+author: sanjay
+categories: [ Real Madrid ]
+image: assets/images/posts/Real Madrid/Osasuna_home.jpg
+---
 Marseille Home
 
 Good evening, we start with a similar 4-3-3 on paper with mulitple different players

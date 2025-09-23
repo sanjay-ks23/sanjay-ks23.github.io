@@ -1,4 +1,10 @@
-
+---
+layout: post
+title:  "Real Sociedad vs Real Madrid: A Deep Dive Tactical Analysis"
+author: sanjay
+categories: [ Real Madrid ]
+image: assets/images/posts/Real Madrid/Osasuna_home.jpg
+---
 Soceidad away.
 
 we again start with a 4-3-3 on paper. With Arda guler likely to be a player that connec
