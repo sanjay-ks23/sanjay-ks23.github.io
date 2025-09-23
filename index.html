@@ -22,36 +22,24 @@ title: Home
 
 {% endif %}
 
-<!-- Posts Index
+<!-- Category Carousels
 ================================================== -->
-<section class="recent-posts">
+{% assign categories = site.posts | map: 'categories' | join: ',' | split: ',' | uniq %}
 
-    <div class="section-title">
-
-        <h2><span>All Stories</span></h2>
-
-    </div>
-
-    <div class="row listrecent">
-
-        {% assign featured_post = site.posts | sort: 'date' | reverse | first %}
-        {% assign remaining_posts = site.posts | where_exp: "post", "post.date != featured_post.date" | sort: 'date' | reverse %}
-        
-        {% for post in remaining_posts limit: paginator.per_page %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
-    </div>
-
-</section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
+{% for category in categories %}
+  {% if category != "" %}
+    <section class="category-row">
+      <h2 class="category-title">{{ category }}</h2>
+      <div class="carousel-wrapper">
+        <div class="posts-carousel">
+          {% assign category_posts = site.posts | where: 'categories', category %}
+          {% for post in category_posts %}
+            {% include carousel-postbox.html %}
+          {% endfor %}
+        </div>
+        <button class="arrow prev-arrow hidden">&lt;</button>
+        <button class="arrow next-arrow">&gt;</button>
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}

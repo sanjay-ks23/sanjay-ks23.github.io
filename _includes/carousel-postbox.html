@@ -1,0 +1,10 @@
+<div class="post-card">
+    <a href="{{ site.baseurl }}{{ post.url }}">
+        {% if post.image %}
+            <img src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
+        {% else %}
+            <img src="{{ site.baseurl }}/assets/images/1.jpg" alt="{{ post.title }}">
+        {% endif %}
+        <h3>{{ post.title }}</h3>
+    </a>
+</div>
