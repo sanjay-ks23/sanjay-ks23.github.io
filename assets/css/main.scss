@@ -40,3 +40,32 @@
 .post-date {
     font-weight: bold;  // Make dates bold
 }
+.card .maxthumb {
+  background-color: #f7fafa; /* A very light gray to fill empty space */
+  height: 200px; /* You can adjust this height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This targets the image itself in the standard post cards */
+.card .maxthumb .img-fluid {
+  object-fit: contain; /* This makes the full image visible */
+  height: 100%;
+  width: 100%;
+}
+
+/* This targets the image container in the featured post boxes */
+.listfeaturedtag .wrapthumbnail {
+  background-color: #f7fafa; /* Matching light gray */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This targets the image itself in the featured post boxes */
+.listfeaturedtag .wrapthumbnail .featured-box-img-cover {
+  object-fit: contain; /* Ensures the full image is visible */
+  height: 100%;
+  width: 100%;
+}
