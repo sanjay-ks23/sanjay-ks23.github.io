@@ -3,50 +3,55 @@ layout: default
 title: Home
 ---
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/carousel.css">
+{% if page.url == "/" %}
 
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span>Featured Post</span></h2>
+        <h2><span>Featured</span></h2>
     </div>
     <div class="row">
-        {% assign latest_post = site.posts[0] %}
-        {% include featuredbox.html post=latest_post %}
+
+    {% assign featured_post = site.posts | sort: 'date' | reverse | first %}
+    {% assign post = featured_post %}
+    {% include featuredbox.html %}
+
     </div>
 </section>
 
+{% endif %}
 
-<!-- Posts by Category
+<!-- Posts Index
 ================================================== -->
-{% for category in site.categories %}
-  <section class="category-row">
-    
-    <h2 class="category-title">{{ category[0] | capitalize }}</h2>
-    
-    <div class="carousel-wrapper">
-      <button class="arrow prev-arrow">‹</button>
-      
-      <div class="posts-carousel">
-        {% for post in category[1] %}
-          <div class="post-card">
-            <a href="{{ site.baseurl }}{{ post.url }}">
-              {% if post.image %}
-                <img src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
-              {% else %}
-                <img src="{{ site.baseurl }}/assets/images/placeholder.png" alt="placeholder">
-              {% endif %}
-              <h3>{{ post.title }}</h3>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-      
-      <button class="arrow next-arrow">›</button>
-    </div>
-    
-  </section>
-{% endfor %}
+<section class="recent-posts">
 
-<script src="{{ site.baseurl }}/assets/js/carousel.js"></script>
+    <div class="section-title">
+
+        <h2><span>All Stories</span></h2>
+
+    </div>
+
+    <div class="row listrecent">
+
+        {% assign featured_post = site.posts | sort: 'date' | reverse | first %}
+        {% assign remaining_posts = site.posts | where_exp: "post", "post.date != featured_post.date" | sort: 'date' | reverse %}
+        
+        {% for post in remaining_posts limit: paginator.per_page %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
