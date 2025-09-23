@@ -32,7 +32,7 @@
 .post-card {
   flex: 0 0 320px; /* Wider cards */
   margin-right: 1rem;
-  border-radius: 20px; /* Slightly less curvature */
+  border-radius: 20px; /* More curved corners */
   overflow: hidden;
   transition: transform 0.3s ease;
   border: 1px solid #ddd;
@@ -86,7 +86,7 @@
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 10;
-  font-size: 3rem; /* Larger arrow icon */
+  font-size: 1.5rem; /* Smaller arrow icon */
   color: rgba(255, 255, 255, 0.8);
   text-shadow: 0 1px 3px rgba(0,0,0,0.5);
   opacity: 0; /* Hidden by default */
@@ -95,6 +95,10 @@
   font-weight: 400;
   background: none;
   border: none;
+  /* Prevents the default button styles on click */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .carousel-wrapper:hover .arrow:not(.hidden) {
@@ -103,8 +107,12 @@
 
 .arrow:hover {
   font-weight: 900; /* Bolder on hover */
-  transform: scale(1.1);
   color: #fff;
+}
+
+.arrow:active {
+  transform: translateY(-50%); /* Keep it in the same place on click */
+  font-weight: 900; /* Keep it bold during click */
 }
 
 .arrow.hidden {
