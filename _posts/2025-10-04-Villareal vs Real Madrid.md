@@ -35,8 +35,8 @@ Great finish from the edge of the box, someone wasn't tracking his man Where is 
 
 Should have been straightforward, but we do tend to make it difficult for ourselves, I think this is kink for the players, to fight hard and "suffer" until the 90''.
 
-And what is Huijsen's obsession with passing in the middle lane when there are 3 players in that exact channel, he has been doing that in most of the matches.
+And what is Huijsen's obsession with passing in the middle lane when there are 3 players in that exact channel? He has been doing that in most of the matches.
 
-Not worthy of a second yellow card for the player.Really harsh and mbappe gets his goal.
+Not worthy of a second yellow card for the player. Really harsh, and Mbappe gets his goal.
 
 Goodbye guys the game is done. 
