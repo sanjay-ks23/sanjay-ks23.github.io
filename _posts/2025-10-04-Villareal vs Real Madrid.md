@@ -31,11 +31,11 @@ In minute 56, our build-up before the shot was amazing.One twos everywhere, all 
 Just a really boring game, straightforward, didn't expect Villareal to sit back and counter, they did have good chances, but the overall consensus should be clear. Why is Vini taking the pen?? Wtf mannn, he is not a good pen taker. I still haven't seen the action that was given as a penalty.
 
 Belllingham gives us dimensionality that we dearly need.
-Great finish from the edge of the box, someone wasn't tracking his man where is cama going, he was marking him and then left him to go defend a cross.
+Great finish from the edge of the box, someone wasn't tracking his man Where is Cama going? He was marking him and then left him to go defend a cross.
 
-SHould have been straightforward, but we do tend to make it difficult for ourselves, I think this is kink for the players , to fight hard and "suffer" until the 90''.
+Should have been straightforward, but we do tend to make it difficult for ourselves, I think this is kink for the players, to fight hard and "suffer" until the 90''.
 
-And what is huijsen's obession with passing in the middle lane when rthere are 3 players in that exact channel ,he has been doing that in most of the matches.
+And what is Huijsen's obsession with passing in the middle lane when there are 3 players in that exact channel, he has been doing that in most of the matches.
 
 Not worthy of a second yellow card for the player.Really harsh and mbappe gets his goal.
 
