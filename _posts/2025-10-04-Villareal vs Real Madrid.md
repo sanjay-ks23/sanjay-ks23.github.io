@@ -21,14 +21,14 @@ Just one single pass through the middle and our entire team is undone. And in ju
 
 The chance missed by Villareal is a classic case of what happens when you have  time in front of goal.
 
-There is not a lot to say in this game, and nt even tactically.
+There is not a lot to say in this game, and not even tactically.
 
 2nd Half:
-Vini is viniying. A very big deflection , but we will take it.
+Vini is viniying. A very big deflection, but we will take it.
 
-In min 56, our build up before the shot was amazing.One twos everywhere all across the pitch.
+In minute 56, our build-up before the shot was amazing.One twos everywhere, all across the pitch.
 
-Just a really boring game, straightforward , didnt expect villareal to sit back and counter, they did have good chances but the overall concensus should be clear. Why is vini taking the pen?? wtf mannn, he is not a good pen taker. I still havent seen the actionn that was given as a penalty.
+Just a really boring game, straightforward, didnt expect villareal to sit back and counter, they did have good chances but the overall concensus should be clear. Why is vini taking the pen?? wtf mannn, he is not a good pen taker. I still havent seen the actionn that was given as a penalty.
 
 Belllingham gives us dimensionality that we dearly need.
 Great finish from the edge of the box, someone wasnt tracking his man, where is cama going, he was marking him and then left him to go defend a cross.
