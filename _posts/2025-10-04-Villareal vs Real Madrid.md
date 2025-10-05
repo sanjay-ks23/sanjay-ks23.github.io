@@ -1,8 +1,8 @@
 Villareal Home
 
-This game will give me a good persepctive as to where we actually are, not a rivalry but against a good attacking team.
+This game will give me a good perspective as to where we actually are, not a rivalry, but against a good attacking team.
 
-Similar starting line up with just valverde in Right back. 
+Similar starting line-up with just Valverde in Right back. 
 
 I have an opinion on our starting lineups, we should have found our starting lineup by now, we need to find it quickly, with the clasico coming in a few weeks.
 
