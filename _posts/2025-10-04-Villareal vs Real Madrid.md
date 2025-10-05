@@ -14,9 +14,9 @@ Vini is playing like vini till now. We need to finish our chances.
 
 The build-up from the wings has been great, but nothing from the middle. Arda needs to move across the middle channels and not to the right wing.
 
-I have a doubt, since the start of the season have we scored in the first 25 mins. I think ceballos has some agenda to play the ball forward. Just look at this dudes first touches man, he seriously cannot take a touch (I am tallking about the argentine shit  if you didnt know) Why does it look slow in the middle of the pitch, I dont want our first goal in a game to be a penalty atleast for this game.
+I have a doubt, since the start of the season, have we scored in the first 25 mins? I think Ceballos has an agenda to play the ball forward. Just look at this dudes first touches, man, he seriously cannot take a touch (I am talking about the Argentine shit  if you didn't know). Why does it look slow in the middle of the pitch? I don't want our first goal in a game to be a penalty at least for this game.
 
-Courtois what a legend!!!!
+Courtois, what a legend!!!!
 just one single pass through the middlle and our entire team is undone.and in justa few mins the same thing happens again, we push way to high and a lot of numbers up the pitch and dont really use them even as a decoy. we are taking the game by the scruff of the neck.
 
 The chance missed by villareal is a cllassic case of what happens when you have  time in front of goal.
