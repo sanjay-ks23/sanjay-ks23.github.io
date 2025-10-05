@@ -9,10 +9,10 @@ I have an opinion on our starting lineups. We should have found our starting lin
 A pretty solid start to the half, confident on the ball and comfortable in possession. Ceballos is the only one who has started poorly and looks clunkier than usual.
 
 Feels like a lack of intensity. Just walking around slowly, and why does it look like I am watching the game in 0.5 speed?
-Great wingplay form both the wingers, to get the wingbacks on yellow.
+Great wingplay from both the wingers to get the wingbacks on yellow.
 Vini is playing like vini till now. We need to finish our chances.
 
-the build from the wings has been great, but nothing from the middle, arda needs to move across the middle channels and not to the right wing.
+The build-up from the wings has been great, but nothing from the middle. Arda needs to move across the middle channels and not to the right wing.
 
 I have a doubt, since the start of the season have we scored in the first 25 mins. I think ceballos has some agenda to play the ball forward. Just look at this dudes first touches man, he seriously cannot take a touch (I am tallking about the argentine shit  if you didnt know) Why does it look slow in the middle of the pitch, I dont want our first goal in a game to be a penalty atleast for this game.
 
