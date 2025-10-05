@@ -39,4 +39,4 @@ And what is Huijsen's obsession with passing in the middle lane when there are 3
 
 Not worthy of a second yellow card for the player. Really harsh, and Mbappe gets his goal.
 
-Goodbye guys the game is done. 
+Goodbye, guys, the game is done. 
