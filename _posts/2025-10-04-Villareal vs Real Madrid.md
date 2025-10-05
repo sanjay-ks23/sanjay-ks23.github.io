@@ -10,7 +10,7 @@ A pretty solid start to the half, confident on the ball and comfortable in posse
 
 Feels like a lack of intensity. Just walking around slowly, and why does it look like I am watching the game in 0.5 speed?
 Great wingplay from both the wingers to get the wingbacks on yellow.
-Vini is playing like vini till now. We need to finish our chances.
+Vini is playing like Vini till now. We need to finish our chances.
 
 The build-up from the wings has been great, but nothing from the middle. Arda needs to move across the middle channels and not to the right wing.
 
@@ -19,7 +19,7 @@ I have a doubt, since the start of the season, have we scored in the first 25 mi
 Courtois, what a legend!!!!
 Just one single pass through the middle and our entire team is undone. And in just a few minutes, the same thing happens again, we push way too high and a lot of numbers up the pitch and don't really use them even as a decoy. We are taking the game by the scruff of the neck.
 
-The chance missed by Villareal is a classic case of what happens when you have  time in front of goal.
+The chance missed by Villareal is a classic case of what happens when you have  time in front of the goal.
 
 There is not a lot to say in this game, and not even tactically.
 
@@ -28,10 +28,10 @@ Vini is viniying. A very big deflection, but we will take it.
 
 In minute 56, our build-up before the shot was amazing.One twos everywhere, all across the pitch.
 
-Just a really boring game, straightforward, didnt expect villareal to sit back and counter, they did have good chances but the overall concensus should be clear. Why is vini taking the pen?? wtf mannn, he is not a good pen taker. I still havent seen the actionn that was given as a penalty.
+Just a really boring game, straightforward, didn't expect Villareal to sit back and counter, they did have good chances, but the overall consensus should be clear. Why is Vini taking the pen?? Wtf mannn, he is not a good pen taker. I still haven't seen the action that was given as a penalty.
 
 Belllingham gives us dimensionality that we dearly need.
-Great finish from the edge of the box, someone wasnt tracking his man, where is cama going, he was marking him and then left him to go defend a cross.
+Great finish from the edge of the box, someone wasn't tracking his man where is cama going, he was marking him and then left him to go defend a cross.
 
 SHould have been straightforward, but we do tend to make it difficult for ourselves, I think this is kink for the players , to fight hard and "suffer" until the 90''.
 
