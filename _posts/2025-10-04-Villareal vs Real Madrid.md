@@ -4,9 +4,9 @@ This game will give me a good perspective as to where we actually are, not a riv
 
 Similar starting line-up with just Valverde in Right back. 
 
-I have an opinion on our starting lineups, we should have found our starting lineup by now, we need to find it quickly, with the clasico coming in a few weeks.
+I have an opinion on our starting lineups. We should have found our starting lineup by now. We need to find it quickly, with the clasico coming in a few weeks.
 
-A pretty solid start to the half, confident on the ball and comfortable in posession. Ceballos is the only one who has started porrly, looks clunkier than usual.
+A pretty solid start to the half, confident on the ball and comfortable in possession. Ceballos is the only one who has started poorly, looks clunkier than usual.
 
 Feels like a lack of intensity. JUst walking around slowly and why does it look like I am watching the game in 0.5 speed.
 Great wingplay form both the wingers, to get the wingbacks on yellow.
