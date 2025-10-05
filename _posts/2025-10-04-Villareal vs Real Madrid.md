@@ -6,9 +6,9 @@ Similar starting line-up with just Valverde in Right back.
 
 I have an opinion on our starting lineups. We should have found our starting lineup by now. We need to find it quickly, with the clasico coming in a few weeks.
 
-A pretty solid start to the half, confident on the ball and comfortable in possession. Ceballos is the only one who has started poorly, looks clunkier than usual.
+A pretty solid start to the half, confident on the ball and comfortable in possession. Ceballos is the only one who has started poorly and looks clunkier than usual.
 
-Feels like a lack of intensity. JUst walking around slowly and why does it look like I am watching the game in 0.5 speed.
+Feels like a lack of intensity. Just walking around slowly, and why does it look like I am watching the game in 0.5 speed?
 Great wingplay form both the wingers, to get the wingbacks on yellow.
 Vini is playing like vini till now. We need to finish our chances.
 
