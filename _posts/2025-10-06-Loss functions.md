@@ -7,3 +7,9 @@ image: assets/images/posts/Loss functions.png
 ---
 
 I wish I had a blog like this when I was doing my undergrad.
+
+Hinge Loss:
+
+'''
+def hinge_loss_function()
+'''
