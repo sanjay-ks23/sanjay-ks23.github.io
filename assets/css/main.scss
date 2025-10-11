@@ -47,7 +47,15 @@
   align-items: center;
   justify-content: center;
 }
+.article-post {
+    text-align: justify;
+    text-justify: inter-word;
+}
 
+.article-post p {
+    text-align: justify;
+    text-justify: inter-word;
+}
 /* This targets the image itself in the standard post cards */
 .card .maxthumb .img-fluid {
   object-fit: contain; /* This makes the full image visible */
