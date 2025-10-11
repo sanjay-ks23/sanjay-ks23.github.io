@@ -26,7 +26,7 @@ We don't refer to Gradient Descent as a force but rather as an optimization algo
 After reading a series of blogs and the work from Stephen Boyd in the form of his book, "Convex Optmization", I can say I have a beginner's understanding of what an optimization problem is, and I am going to try and explain it in the simplest way possible. 
 
 A generalized understanding brings us to the basic notation of what an optimization problem is.
-We try to minimize a function $ f_0(x) $
+We try to minimize a function $\displaystyle f_0(x) $
 
 
 Machine Learning is also a kind of optimization problem, where we try to minimize the loss/cost function. This is a specific case and 
