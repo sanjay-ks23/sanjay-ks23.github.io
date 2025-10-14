@@ -29,4 +29,4 @@ A generalized understanding brings us to the basic notation of what an optimizat
 We try to minimize a function $\displaystyle f_0(x) $
 
 
-Machine Learning is also a kind of optimization problem, where we try to minimize the loss/cost function. This is a specific case and here we
+Machine Learning is also a kind of optimization problem, where we try to minimize the loss/cost function. This is a specific case and here we try to optimize 
