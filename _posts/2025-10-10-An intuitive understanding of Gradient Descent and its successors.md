@@ -29,4 +29,4 @@ A generalized understanding brings us to the basic notation of what an optimizat
 We try to minimize a function $\displaystyle f_0(x) $
 
 
-Machine Learning is also a kind of optimization problem, where we try to minimize the loss/cost function. This is a specific case, and here we try to optimise the loss function for its parameters. Parameters when it comes to ML models are usually represented by weights and a bias terms among others
+Machine Learning is also a kind of optimization problem, where we try to minimize the loss/cost function. This is a specific case, and here we try to optimise the loss function for its parameters. Parameters when it comes to ML models are usually represented by weights and bias terms, among others. And luckily the function being optimized here 
