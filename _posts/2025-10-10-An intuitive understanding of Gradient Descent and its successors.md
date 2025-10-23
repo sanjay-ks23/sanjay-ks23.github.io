@@ -1,4 +1,4 @@
-9---
+---
 layout: post
 title:  "An intuitive understanding of Gradient Descent and its successors"
 author: sanjay
