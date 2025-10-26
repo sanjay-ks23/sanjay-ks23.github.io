@@ -40,3 +40,24 @@ And what is Huijsen's obsession with passing in the middle lane when there are 3
 Not worthy of a second yellow card for the player. Really harsh, and Mbappe gets his goal.
 
 Goodbye, guys, the game is done. 
+
+the big one 
+Madrid vs Barcelona
+
+I dont need to say anything, this is the big one
+
+we start wth a 4-2-1-3 , please just win guys.It will be difficult but atleast give it all for the badge.
+
+We will understand as the game goes on how we setup.
+It was offside i GUESS, BUT THAT FINISH IS SOMETHING. It was kicked by fermin but if this is given offside, then I am going to be pissed. It was given offside.
+
+We are setup in a mid block, and we are getting really good chances, but have been afaris of them, that is what is holding us back 
+
+THe first half has been pretty eventful, but the aqctual play has been poor from both teams, they both look vulnerable in the back.
+
+We go into the secon half, I am more worried, because we tend to drop  the effort usually near the 60th min, hopefully they do nt do that today.
+
+We are so shit, we try to play out from th eback, but when we have the ball in th edeep end, we dont get numbers in midfield for any options, so we end up losing posession.
+
+Why are we parking the bus man.
+fucking embarrasing to do this, for nearly the last 30 mins
