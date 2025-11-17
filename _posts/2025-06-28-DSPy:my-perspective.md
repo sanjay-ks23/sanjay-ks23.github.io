@@ -1,11 +1,3 @@
----
-layout: post
-title: "DSPy: A Revolution in Prompt Engineering"
-author: Sanjay
-categories: [ AI Agents ]
-image: "assets/images/dspy.jpg"
----
-
 This blog is predominantly my understanding of the *Build and Optimize Agentic Apps with DSPy and MLflow* course from DeepLearning AI.
 
 The course has been separated into four main categories:
