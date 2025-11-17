@@ -1,10 +1,4 @@
----
-layout: post
-title:  "Real Madrid vs Mallorca: A Deep Dive Tactical Analysis"
-author: sanjay
-categories: [ Real Madrid]
-image: "assets/images/4.jpg"
----
+
 
 This post serves as a comprehensive template for in-depth tactical analysis. Use this structure to break down a match systematically.
 
